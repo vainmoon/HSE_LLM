@@ -1,0 +1,13 @@
+{
+  "model_class": "Qwen3_5ForConditionalGeneration",
+  "processor_class": "Qwen3VLProcessor",
+  "parameters": 2213241664,
+  "lora_parameters_remaining": 0,
+  "loading_info": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "original_assets_unchanged": true
+}

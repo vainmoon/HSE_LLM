@@ -1,0 +1,11 @@
+.venv*/
+.cache/
+data/
+checkpoints/
+__pycache__/
+*.pyc
+*.log
+/artifacts/cpu-environment.txt
+/artifacts/cpu-validation.json
+!results/
+!results/**

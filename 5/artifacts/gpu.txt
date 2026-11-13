@@ -1,0 +1,2 @@
+index, name, memory.free [MiB]
+7, NVIDIA H100 80GB HBM3, 81110 MiB

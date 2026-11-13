@@ -1,0 +1,9 @@
+{
+  "reward": "shaped",
+  "hypothesis": "Последовательностная коррекция vLLM перемножает отношения вероятностей по всем токенам и может сильно уменьшать вес длинных ответов. Токенная коррекция должна ослабить этот эффект и помочь сохранить нужные вызовы. От grpo_shaped меняется только vllm_importance_sampling_mode: sequence_mask -> token_mask; данные, бюджет и правило выбора шага прежние.",
+  "trainer": {
+    "loss_type": "grpo",
+    "scale_rewards": "group",
+    "vllm_importance_sampling_mode": "token_mask"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "reward": "exact",
+  "hypothesis": "Точная награда приближает целевую метрику, но может давать мало ненулевых advantage.",
+  "trainer": {"loss_type": "grpo", "scale_rewards": "group"}
+}

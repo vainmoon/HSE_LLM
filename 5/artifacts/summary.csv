@@ -1,0 +1,6 @@
+run,step,overall,simple,multiple,parallel,parallel_multiple,irrelevance,text_instead_of_call,call_in_irrelevance
+base,0,0.6893333333333334,0.66,0.7866666666666666,0.56,0.8,0.64,33,16
+grpo_exact,50,0.604,0.5,0.72,0.44,0.56,0.8,75,7
+grpo_shaped,100,0.6733333333333333,0.64,0.7466666666666666,0.5,0.7,0.78,47,9
+dr_grpo_shaped,150,0.632,0.54,0.6799999999999999,0.46,0.68,0.8,70,8
+grpo_token_is,150,0.7000000000000001,0.68,0.8,0.52,0.8,0.7,29,13

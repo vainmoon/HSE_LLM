@@ -1,0 +1,5 @@
+{
+  "reward": "shaped",
+  "hypothesis": "Dr. GRPO убирает нормировку advantage на std и зависимость веса токена от длины ответа. Сравнение с grpo_shaped оценивает совместный эффект этих двух изменений.",
+  "trainer": {"loss_type": "dr_grpo", "scale_rewards": "none"}
+}

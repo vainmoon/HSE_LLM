@@ -1,0 +1,32 @@
+{
+  "normalized_model_config_differences": [
+    {
+      "key": "_name_or_path",
+      "base": ".cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "export": "checkpoints/grpo_exact/merged"
+    },
+    {
+      "key": "dtype",
+      "base": null,
+      "export": "bfloat16"
+    },
+    {
+      "key": "vision_config.dtype",
+      "base": null,
+      "export": "bfloat16"
+    }
+  ],
+  "generation_config_differences": [
+    {
+      "key": "output_attentions",
+      "base": false,
+      "export": null
+    },
+    {
+      "key": "output_hidden_states",
+      "base": false,
+      "export": null
+    }
+  ],
+  "saved_adapter_equals_checkpoint_50": true
+}

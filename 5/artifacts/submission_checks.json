@@ -1,0 +1,70 @@
+{
+  "base_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "train_examples": 6000,
+  "validation_examples": 256,
+  "dialogues_disjoint": true,
+  "prompts_disjoint": true,
+  "original_files": {
+    "evaluate.py": true,
+    "bfcl.jsonl": true,
+    "Dockerfile": true
+  },
+  "runs": {
+    "grpo_exact": {
+      "selected_step": 50,
+      "checks": {
+        "completed": true,
+        "150_steps": true,
+        "finite_metrics": true,
+        "source_matches": true,
+        "data_matches": true,
+        "selected_adapter_matches": true,
+        "export_source_matches": true,
+        "tokenizer_assets_match": true,
+        "350_predictions": true
+      }
+    },
+    "grpo_shaped": {
+      "selected_step": 100,
+      "checks": {
+        "completed": true,
+        "150_steps": true,
+        "finite_metrics": true,
+        "source_matches": true,
+        "data_matches": true,
+        "selected_adapter_matches": true,
+        "export_source_matches": true,
+        "tokenizer_assets_match": true,
+        "350_predictions": true
+      }
+    },
+    "dr_grpo_shaped": {
+      "selected_step": 150,
+      "checks": {
+        "completed": true,
+        "150_steps": true,
+        "finite_metrics": true,
+        "source_matches": true,
+        "data_matches": true,
+        "selected_adapter_matches": true,
+        "export_source_matches": true,
+        "tokenizer_assets_match": true,
+        "350_predictions": true
+      }
+    },
+    "grpo_token_is": {
+      "selected_step": 150,
+      "checks": {
+        "completed": true,
+        "150_steps": true,
+        "finite_metrics": true,
+        "source_matches": true,
+        "data_matches": true,
+        "selected_adapter_matches": true,
+        "export_source_matches": true,
+        "tokenizer_assets_match": true,
+        "350_predictions": true
+      }
+    }
+  }
+}

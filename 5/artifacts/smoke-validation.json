@@ -1,0 +1,8 @@
+{
+  "run": "grpo_exact_smoke",
+  "completed_steps": 2,
+  "lora_B_tensors": 186,
+  "nonzero_lora_B_tensors": 186,
+  "max_abs_lora_B": 1.0013409337261692e-05,
+  "initialization": "LoRA B initialized to zero; nonzero saved values confirm weight updates."
+}

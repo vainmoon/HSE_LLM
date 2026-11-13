@@ -1,0 +1,22 @@
+vllm @ https://github.com/vllm-project/vllm/releases/download/v0.22.0/vllm-0.22.0%2Bcu129-cp38-abi3-manylinux_2_28_x86_64.whl
+torch==2.11.0
+torchvision==0.26.0
+torchaudio==2.11.0
+trl==1.16.0
+transformers==5.9.0
+peft==0.18.1
+datasets==4.7.0
+accelerate==1.10.1
+flash-linear-attention==0.4.1
+# Собирается отдельно после установки PyTorch; команды приведены в README.
+causal-conv1d==1.7.0
+bfcl-eval==2026.3.23
+soundfile==0.14.0
+scipy==1.16.2
+numpy==2.2.6
+jsonschema==4.25.1
+jinja2==3.1.6
+matplotlib==3.10.3
+Markdown==3.8.2
+weasyprint==66.0
+pypdf==6.1.1

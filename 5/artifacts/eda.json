@@ -1,0 +1,98 @@
+{
+  "dataset": "Team-ACE/ToolACE",
+  "revision": "6bda777c88d21e5a204703c1ee45597a8fa4f734",
+  "raw_sha256": "ba12c083fca7e8da48c67ad5b895e495447da7c66e39a2e19742c082e6cb537e",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "base_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "settings": {
+    "seed": 42,
+    "validation_fraction": 0.1,
+    "max_prompt_tokens": 3072,
+    "max_answer_tokens": 1024,
+    "max_train": 6000,
+    "max_validation": 256,
+    "no_call_fraction": 0.25
+  },
+  "raw_dialogues": 11300,
+  "unique_dialogues": 11282,
+  "raw_messages": 27638,
+  "unique_dialogue_messages": 27602,
+  "unique_tools": 16128,
+  "skipped": {
+    "invalid_reference_or_history": 108,
+    "empty_answer": 5,
+    "long_prompt": 11,
+    "unsupported_tools_format": 745,
+    "duplicate_dialogue": 18,
+    "long_answer": 3,
+    "duplicate_validation_prompt": 7
+  },
+  "before_sampling": {
+    "train": {
+      "single": 4944,
+      "no_call": 1796,
+      "parallel": 3637
+    },
+    "validation": {
+      "single": 521,
+      "no_call": 218,
+      "parallel": 421
+    }
+  },
+  "splits": {
+    "train": {
+      "examples": 6000,
+      "dialogues": 5490,
+      "kinds": {
+        "no_call": 1500,
+        "single": 2615,
+        "parallel": 1885
+      },
+      "sha256": "83f20fdd81c31b314296dde758fde0f235d51fc1865808d04961384079961a64"
+    },
+    "validation": {
+      "examples": 256,
+      "dialogues": 252,
+      "kinds": {
+        "single": 106,
+        "parallel": 102,
+        "no_call": 48
+      },
+      "sha256": "1ea63affe798a64069ef272bde5d31fba30859d92a2e38059c876246c78dcf93"
+    }
+  },
+  "length_quantiles_before_filter": {
+    "prompt": {
+      "p0": 272.0,
+      "p50": 705.0,
+      "p90": 1209.0,
+      "p95": 1402.8999999999996,
+      "p99": 1928.2799999999952,
+      "p100": 4593.0
+    },
+    "answer": {
+      "p0": 2.0,
+      "p50": 68.0,
+      "p90": 215.0,
+      "p95": 281.0,
+      "p99": 425.0,
+      "p100": 1241.0
+    },
+    "tools": {
+      "p0": 1.0,
+      "p50": 3.0,
+      "p90": 6.0,
+      "p95": 6.0,
+      "p99": 8.0,
+      "p100": 9.0
+    },
+    "calls": {
+      "p0": 0.0,
+      "p50": 1.0,
+      "p90": 4.0,
+      "p95": 4.0,
+      "p99": 5.0,
+      "p100": 12.0
+    }
+  }
+}

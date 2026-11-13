@@ -1,0 +1,389 @@
+[
+  {
+    "type": "Лишний вызов",
+    "example": {
+      "id": "irrelevance_233",
+      "question": [
+        {
+          "role": "user",
+          "content": "What is the equivalent of $20 in British Pounds?"
+        }
+      ],
+      "function": [
+        {
+          "name": "weather_in_location",
+          "description": "Retrieve the current weather conditions in a specific location.",
+          "parameters": {
+            "type": "dict",
+            "properties": {
+              "location": {
+                "type": "string",
+                "description": "The location where to retrieve the weather conditions."
+              },
+              "unit": {
+                "type": "string",
+                "enum": [
+                  "C",
+                  "F"
+                ],
+                "description": "The unit to use for the temperature, either Celsius (C) or Fahrenheit (F)."
+              }
+            },
+            "required": [
+              "location",
+              "unit"
+            ]
+          }
+        }
+      ],
+      "category": "irrelevance",
+      "ground_truth": []
+    },
+    "prediction": {
+      "id": "irrelevance_233",
+      "category": "irrelevance",
+      "response": "<tool_call>\n<function=weather_in_location>\n<parameter=location>\nLondon\n</parameter>\n<parameter=unit>\nC\n</parameter>\n</function>\n</tool_call>",
+      "calls": [
+        {
+          "weather_in_location": {
+            "location": "London",
+            "unit": "C"
+          }
+        }
+      ],
+      "check": {
+        "valid": false,
+        "error": "Вызов инструмента не требовался."
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 345,
+      "completion_tokens": 40
+    }
+  },
+  {
+    "type": "Пропущенный нужный вызов",
+    "example": {
+      "id": "simple_241",
+      "question": [
+        {
+          "role": "user",
+          "content": "Who was the U.S. president during the Civil War?"
+        }
+      ],
+      "function": [
+        {
+          "name": "US_President_During_Event",
+          "description": "Returns the U.S. president during a specified historical event.",
+          "parameters": {
+            "type": "dict",
+            "properties": {
+              "event": {
+                "type": "string",
+                "description": "The historical event."
+              },
+              "country": {
+                "type": "string",
+                "description": "The country the president leads (optional parameter, defaults to 'USA' if not specified)."
+              }
+            },
+            "required": [
+              "event"
+            ]
+          }
+        }
+      ],
+      "category": "simple",
+      "ground_truth": [
+        {
+          "US_President_During_Event": {
+            "event": [
+              "Civil War"
+            ],
+            "country": [
+              "USA",
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    "prediction": {
+      "id": "simple_241",
+      "category": "simple",
+      "response": "The U.S. president during the Civil War was **Abraham Lincoln**. He served from March 1861 until his assassination in April 1865.",
+      "calls": [],
+      "check": {
+        "valid": false,
+        "error": "Ожидался вызов инструмента."
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 332,
+      "completion_tokens": 36
+    }
+  },
+  {
+    "type": "Ошибка нескольких вызовов",
+    "example": {
+      "id": "parallel_105",
+      "question": [
+        {
+          "role": "user",
+          "content": "\"Can you calculate the heat capacity at constant pressure of air for a science experiment I am conducting? I have a container with a volume of 2.5 m^3 and I am able to maintain the temperature at 300 Kelvin. I will be repeating the experiment at a higher temperature of 350 Kelvin and then at a lower volume of 1.5 m^3. I am using air for all these experiments. Can you provide the heat capacity for these three different conditions?\""
+        }
+      ],
+      "function": [
+        {
+          "name": "calc_heat_capacity",
+          "description": "Calculate the heat capacity at constant pressure of air using its temperature and volume.",
+          "parameters": {
+            "type": "dict",
+            "properties": {
+              "temp": {
+                "type": "integer",
+                "description": "The temperature of the gas in Kelvin."
+              },
+              "volume": {
+                "type": "float",
+                "description": "The volume of the gas in m^3."
+              },
+              "gas": {
+                "type": "string",
+                "description": "Type of gas, with air as default."
+              }
+            },
+            "required": [
+              "temp",
+              "volume"
+            ]
+          }
+        }
+      ],
+      "category": "parallel",
+      "ground_truth": [
+        {
+          "calc_heat_capacity": {
+            "temp": [
+              300
+            ],
+            "volume": [
+              2.5
+            ],
+            "gas": [
+              "air",
+              ""
+            ]
+          }
+        },
+        {
+          "calc_heat_capacity": {
+            "temp": [
+              350
+            ],
+            "volume": [
+              2.5
+            ],
+            "gas": [
+              "air",
+              ""
+            ]
+          }
+        },
+        {
+          "calc_heat_capacity": {
+            "temp": [
+              300
+            ],
+            "volume": [
+              1.5
+            ],
+            "gas": [
+              "air",
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    "prediction": {
+      "id": "parallel_105",
+      "category": "parallel",
+      "response": "<tool_call>\n<function=calc_heat_capacity>\n<parameter=temp>\n300\n</parameter>\n<parameter=volume>\n2.5\n</parameter>\n<parameter=gas>\nair\n</parameter>\n</function>\n</tool_call>\n<tool_call>\n<function=calc_heat_capacity>\n<parameter=temp>\n350\n</parameter>\n<parameter=volume>\n2.5\n</parameter>\n<parameter=gas>\nair\n</parameter>\n</function>\n</tool_call>\n<tool_call>\n<function=calc_heat_capacity>\n<parameter=temp>\n350\n</parameter>\n<parameter=volume>\n1.5\n</parameter>\n<parameter=gas>\nair\n</parameter>\n</function>\n</tool_call>",
+      "calls": [
+        {
+          "calc_heat_capacity": {
+            "temp": 300,
+            "volume": 2.5,
+            "gas": "air"
+          }
+        },
+        {
+          "calc_heat_capacity": {
+            "temp": 350,
+            "volume": 2.5,
+            "gas": "air"
+          }
+        },
+        {
+          "calc_heat_capacity": {
+            "temp": 350,
+            "volume": 1.5,
+            "gas": "air"
+          }
+        }
+      ],
+      "check": {
+        "valid": false,
+        "error": [
+          "Could not find a matching function among index [2] of model output for index 2 of possible answers.",
+          {
+            "Model Result Index 2": {
+              "sub_error": [
+                "Invalid value for parameter 'temp': 350. Expected one of [300]."
+              ],
+              "sub_error_type": "value_error:others",
+              "model_output_item": {
+                "calc_heat_capacity": {
+                  "temp": 350,
+                  "volume": 1.5,
+                  "gas": "air"
+                }
+              },
+              "possible_answer_item": {
+                "calc_heat_capacity": {
+                  "temp": [
+                    300
+                  ],
+                  "volume": [
+                    1.5
+                  ],
+                  "gas": [
+                    "air",
+                    ""
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "error_type": "parallel_function_checker_no_order:cannot_find_match"
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 443,
+      "completion_tokens": 165
+    }
+  },
+  {
+    "type": "Ошибка выбора функции или аргументов",
+    "example": {
+      "id": "simple_386",
+      "question": [
+        {
+          "role": "user",
+          "content": "Book a luxury room in Hotel Paradise, Las Vegas, with a city view for 3 days starting from May 12, 2022."
+        }
+      ],
+      "function": [
+        {
+          "name": "book_hotel",
+          "description": "Book a room in a specific hotel with particular preferences",
+          "parameters": {
+            "type": "dict",
+            "properties": {
+              "hotel_name": {
+                "type": "string",
+                "description": "The name of the hotel."
+              },
+              "location": {
+                "type": "string",
+                "description": "The location of the hotel."
+              },
+              "room_type": {
+                "type": "string",
+                "description": "The type of room preferred."
+              },
+              "start_date": {
+                "type": "string",
+                "description": "The starting date of the stay in format MM-DD-YYYY."
+              },
+              "stay_duration": {
+                "type": "integer",
+                "description": "The duration of the stay in days."
+              },
+              "view": {
+                "type": "string",
+                "description": "The preferred view from the room, can be ignored if no preference. If none provided, assumes no preference.",
+                "default": "No preference"
+              }
+            },
+            "required": [
+              "hotel_name",
+              "location",
+              "room_type",
+              "start_date",
+              "stay_duration"
+            ]
+          }
+        }
+      ],
+      "category": "simple",
+      "ground_truth": [
+        {
+          "book_hotel": {
+            "hotel_name": [
+              "Hotel Paradise"
+            ],
+            "location": [
+              "Las Vegas",
+              "LV"
+            ],
+            "room_type": [
+              "luxury",
+              "Luxury"
+            ],
+            "start_date": [
+              "05-12-2022",
+              "2022-05-12",
+              "12/05/2022",
+              "May.12,2022",
+              "May 12, 2022"
+            ],
+            "stay_duration": [
+              3
+            ],
+            "view": [
+              "city view",
+              "city"
+            ]
+          }
+        }
+      ]
+    },
+    "prediction": {
+      "id": "simple_386",
+      "category": "simple",
+      "response": "<tool_call>\n<function=book_hotel>\n<parameter=hotel_name>\nHotel Paradise\n</parameter>\n<parameter=location>\nLas Vegas\n</parameter>\n<parameter=room_type>\nluxury room\n</parameter>\n<parameter=start_date>\n2022-05-12\n</parameter>\n<parameter=stay_duration>\n3\n</parameter>\n<parameter=view>\ncity view\n</parameter>\n</function>\n</tool_call>",
+      "calls": [
+        {
+          "book_hotel": {
+            "hotel_name": "Hotel Paradise",
+            "location": "Las Vegas",
+            "room_type": "luxury room",
+            "start_date": "2022-05-12",
+            "stay_duration": 3,
+            "view": "city view"
+          }
+        }
+      ],
+      "check": {
+        "valid": false,
+        "error": [
+          "Invalid value for parameter 'room_type': 'luxury room'. Expected one of ['luxury', 'Luxury']. Case insensitive."
+        ],
+        "error_type": "value_error:string"
+      },
+      "finish_reason": "stop",
+      "prompt_tokens": 469,
+      "completion_tokens": 104
+    }
+  }
+]

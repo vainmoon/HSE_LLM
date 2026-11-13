@@ -1,0 +1,66 @@
+{
+  "source_id": "86da3e5a56331174_1",
+  "gold": [
+    {
+      "name": "Get Filming Locations",
+      "arguments": {
+        "tconst": "tt9916362"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "case": "Правильный ответ",
+      "response": "<tool_call>\n<function=Get Filming Locations>\n<parameter=tconst>\ntt9916362\n</parameter>\n</function>\n</tool_call>",
+      "truncated": false,
+      "exact": 1.0,
+      "names": 1.0,
+      "arguments": 1.0,
+      "shaped": 1.0
+    },
+    {
+      "case": "Пропущены аргументы",
+      "response": "<tool_call>\n<function=Get Filming Locations>\n</function>\n</tool_call>",
+      "truncated": false,
+      "exact": 0.0,
+      "names": 1.0,
+      "arguments": 0.0,
+      "shaped": 0.2
+    },
+    {
+      "case": "Пропущен вызов",
+      "response": "Please clarify your request.",
+      "truncated": false,
+      "exact": 0.0,
+      "names": 0.0,
+      "arguments": 0.0,
+      "shaped": -1.0
+    },
+    {
+      "case": "Лишний повторный вызов",
+      "response": "<tool_call>\n<function=Get Filming Locations>\n<parameter=tconst>\ntt9916362\n</parameter>\n</function>\n</tool_call>\n<tool_call>\n<function=Get Filming Locations>\n<parameter=tconst>\ntt9916362\n</parameter>\n</function>\n</tool_call>",
+      "truncated": false,
+      "exact": 0.0,
+      "names": 0.6666666666666666,
+      "arguments": 0.6666666666666666,
+      "shaped": 0.3333333333333333
+    },
+    {
+      "case": "Обрезанный ответ",
+      "response": "<tool_call>\n<function=Get Filming Locations>\n<parameter=tconst>\ntt9916362\n</parameter>\n</function>\n</tool_call>",
+      "truncated": true,
+      "exact": 0.0,
+      "names": 0.0,
+      "arguments": 0.0,
+      "shaped": -1.0
+    },
+    {
+      "case": "Ответ без инструмента на no-call запрос",
+      "response": "You need to provide the content of the file in addition to the filename.\n\nThe function `create_file` requires the following arguments:\n- `filename`: \"Meeting Report - September 26\"\n- `content`: [missing]\n\nThe content is missing.",
+      "exact": 1.0,
+      "names": 1.0,
+      "arguments": 1.0,
+      "shaped": 1.0
+    }
+  ]
+}

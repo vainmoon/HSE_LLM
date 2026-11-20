@@ -1,0 +1,9 @@
+--extra-index-url https://download.pytorch.org/whl/cu129
+
+vllm @ https://github.com/vllm-project/vllm/releases/download/v0.22.0/vllm-0.22.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl ; platform_machine == "x86_64"
+vllm @ https://github.com/vllm-project/vllm/releases/download/v0.22.0/vllm-0.22.0+cu129-cp38-abi3-manylinux_2_28_aarch64.whl ; platform_machine == "aarch64"
+torch==2.11.0+cu129
+torchaudio==2.11.0+cu129
+torchvision==0.26.0+cu129
+aiperf==0.13.0
+transformers==5.22.1

@@ -1,0 +1,622 @@
+23:49:07.560 INFO     Starting AIPerf System (_single_run.py:81)
+23:49:07.567 INFO     [OK] Tokenizer Qwen/Qwen3-8B detected (tokenizer_display.py:297)
+23:49:07.568 INFO     1 tokenizer validated | 0.0s (tokenizer_display.py:306)
+23:49:07.568 INFO     HF cache hit (skipping prefetch): ['Qwen/Qwen3-8B'] (tokenizer_validator.py:99)
+23:49:07.811 INFO     Registered: Gpu_Telemetry_Manager ('gpu_telemetry_manager') [0/0] (service_registry.py:196)
+23:49:07.812 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller_dispatch.py:146)
+23:49:07.812 INFO     Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager') (system_controller_dispatch.py:146)
+23:49:07.817 INFO     GPU telemetry export enabled: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/gpu_telemetry_export.jsonl (jsonl_writer.py:56)
+23:49:07.824 INFO     Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable) (otel_metrics_results_processor.py:127)
+23:49:07.825 INFO     Record metrics export enabled: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/profile_export.jsonl (record_export_jsonl_writer.py:62)
+23:49:07.842 INFO     Registered: Worker_Manager ('worker_manager') [0/0] (service_registry.py:196)
+23:49:07.842 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller_dispatch.py:146)
+23:49:07.842 INFO     Registered Worker Manager (id: 'worker_manager') (system_controller_dispatch.py:146)
+23:49:07.991 INFO     OutputsJsonRecordProcessor initialized: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/output_fragments/output_fragments_record_processor_5893afce.jsonl (outputs_json_record_processor.py:107)
+23:49:07.999 INFO     Registered: Records_Manager ('records_manager') [0/0] (service_registry.py:196)
+23:49:08.000 INFO     Registered Records Manager (id: 'records_manager') (system_controller_dispatch.py:146)
+23:49:08.000 INFO     Registered: Dataset_Manager ('dataset_manager') [0/0] (service_registry.py:196)
+23:49:08.001 INFO     Registered Dataset Manager (id: 'dataset_manager') (system_controller_dispatch.py:146)
+23:49:08.003 INFO     OutputsJsonRecordProcessor initialized: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/output_fragments/output_fragments_record_processor_a8f614db.jsonl (outputs_json_record_processor.py:107)
+23:49:08.007 INFO     Registered: Record_Processor ('record_processor_5893afce') [0/0] (service_registry.py:196)
+23:49:08.008 INFO     Registered Record Processor (id: 'record_processor_5893afce') (system_controller_dispatch.py:146)
+23:49:08.008 INFO     Registered Record Processor (id: 'record_processor_5893afce') (system_controller_dispatch.py:146)
+23:49:08.012 INFO     Registered: Record_Processor ('record_processor_a8f614db') [0/0] (service_registry.py:196)
+23:49:08.013 INFO     Registered Record Processor (id: 'record_processor_a8f614db') (system_controller_dispatch.py:146)
+23:49:08.013 INFO     Registered Record Processor (id: 'record_processor_a8f614db') (system_controller_dispatch.py:146)
+23:49:08.015 INFO     OutputsJsonRecordProcessor initialized: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/output_fragments/output_fragments_record_processor_ef3a4d59.jsonl (outputs_json_record_processor.py:107)
+23:49:08.023 INFO     OutputsJsonRecordProcessor initialized: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/output_fragments/output_fragments_record_processor_f60381b9.jsonl (outputs_json_record_processor.py:107)
+23:49:08.030 INFO     Registered: Record_Processor ('record_processor_f60381b9') [0/0] (service_registry.py:196)
+23:49:08.030 INFO     Registered Record Processor (id: 'record_processor_f60381b9') (system_controller_dispatch.py:146)
+23:49:08.031 INFO     Registered Record Processor (id: 'record_processor_f60381b9') (system_controller_dispatch.py:146)
+23:49:08.033 INFO     Registered: Record_Processor ('record_processor_ef3a4d59') [0/0] (service_registry.py:196)
+23:49:08.033 INFO     Registered Record Processor (id: 'record_processor_ef3a4d59') (system_controller_dispatch.py:146)
+23:49:08.034 INFO     Registered Record Processor (id: 'record_processor_ef3a4d59') (system_controller_dispatch.py:146)
+23:49:08.047 INFO     OutputsJsonRecordProcessor initialized: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/output_fragments/output_fragments_record_processor_49795c65.jsonl (outputs_json_record_processor.py:107)
+23:49:08.057 INFO     Registered: Record_Processor ('record_processor_49795c65') [0/0] (service_registry.py:196)
+23:49:08.057 INFO     Registered Record Processor (id: 'record_processor_49795c65') (system_controller_dispatch.py:146)
+23:49:08.057 INFO     Registered Record Processor (id: 'record_processor_49795c65') (system_controller_dispatch.py:146)
+23:49:08.070 INFO     Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics'] (manager.py:197)
+23:49:08.070 INFO     OutputsJsonRecordProcessor initialized: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/output_fragments/output_fragments_record_processor_e4b52624.jsonl (outputs_json_record_processor.py:107)
+23:49:08.074 INFO     OutputsJsonRecordProcessor initialized: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/output_fragments/output_fragments_record_processor_f29c9e68.jsonl (outputs_json_record_processor.py:107)
+23:49:08.075 INFO     Registered: Server_Metrics_Manager ('server_metrics_manager') [0/0] (service_registry.py:196)
+23:49:08.075 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller_dispatch.py:146)
+23:49:08.076 INFO     Registered Server Metrics Manager (id: 'server_metrics_manager') (system_controller_dispatch.py:146)
+23:49:08.086 INFO     Registered: Record_Processor ('record_processor_f29c9e68') [0/0] (service_registry.py:196)
+23:49:08.087 INFO     Registered Record Processor (id: 'record_processor_f29c9e68') (system_controller_dispatch.py:146)
+23:49:08.088 INFO     Registered Record Processor (id: 'record_processor_f29c9e68') (system_controller_dispatch.py:146)
+23:49:08.088 INFO     Registered: Record_Processor ('record_processor_e4b52624') [0/0] (service_registry.py:196)
+23:49:08.088 INFO     Registered Record Processor (id: 'record_processor_e4b52624') (system_controller_dispatch.py:146)
+23:49:08.088 INFO     Registered Record Processor (id: 'record_processor_e4b52624') (system_controller_dispatch.py:146)
+23:49:08.102 INFO     OutputsJsonRecordProcessor initialized: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/output_fragments/output_fragments_record_processor_faacc5a6.jsonl (outputs_json_record_processor.py:107)
+23:49:08.121 INFO     Registered: Record_Processor ('record_processor_faacc5a6') [0/0] (service_registry.py:196)
+23:49:08.122 INFO     Registered Record Processor (id: 'record_processor_faacc5a6') (system_controller_dispatch.py:146)
+23:49:08.122 INFO     Registered Record Processor (id: 'record_processor_faacc5a6') (system_controller_dispatch.py:146)
+23:49:08.215 INFO     Registered: Worker ('worker_9ec42514') [0/0] (service_registry.py:196)
+23:49:08.216 INFO     Registered Worker (id: 'worker_9ec42514') (system_controller_dispatch.py:146)
+23:49:08.216 INFO     Registered Worker (id: 'worker_9ec42514') (system_controller_dispatch.py:146)
+23:49:08.224 INFO     Registered: Worker ('worker_f0db22a1') [0/0] (service_registry.py:196)
+23:49:08.225 INFO     Registered Worker (id: 'worker_f0db22a1') (system_controller_dispatch.py:146)
+23:49:08.225 INFO     Registered Worker (id: 'worker_f0db22a1') (system_controller_dispatch.py:146)
+23:49:08.257 INFO     Registered: Worker ('worker_2f57170a') [0/0] (service_registry.py:196)
+23:49:08.258 INFO     Registered Worker (id: 'worker_2f57170a') (system_controller_dispatch.py:146)
+23:49:08.258 INFO     Registered Worker (id: 'worker_2f57170a') (system_controller_dispatch.py:146)
+23:49:08.299 INFO     Registered: Worker ('worker_b8904c4b') [0/0] (service_registry.py:196)
+23:49:08.299 INFO     Registered Worker (id: 'worker_b8904c4b') (system_controller_dispatch.py:146)
+23:49:08.299 INFO     Registered: Worker ('worker_67b8c2ca') [0/0] (service_registry.py:196)
+23:49:08.299 INFO     Registered Worker (id: 'worker_67b8c2ca') (system_controller_dispatch.py:146)
+23:49:08.300 INFO     Registered Worker (id: 'worker_67b8c2ca') (system_controller_dispatch.py:146)
+23:49:08.300 INFO     Registered Worker (id: 'worker_b8904c4b') (system_controller_dispatch.py:146)
+23:49:08.302 INFO     Registered: Worker ('worker_b1cefe9d') [0/0] (service_registry.py:196)
+23:49:08.302 INFO     Registered Worker (id: 'worker_b1cefe9d') (system_controller_dispatch.py:146)
+23:49:08.302 INFO     Registered Worker (id: 'worker_b1cefe9d') (system_controller_dispatch.py:146)
+23:49:08.319 INFO     Registered: Timing_Manager ('timing_manager') [0/0] (service_registry.py:196)
+23:49:08.319 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)
+23:49:08.320 INFO     Registered Timing Manager (id: 'timing_manager') (system_controller_dispatch.py:146)
+23:49:08.320 INFO     Registered: Worker ('worker_4c19747e') [0/0] (service_registry.py:196)
+23:49:08.320 INFO     Registered Worker (id: 'worker_4c19747e') (system_controller_dispatch.py:146)
+23:49:08.320 INFO     Registered Worker (id: 'worker_4c19747e') (system_controller_dispatch.py:146)
+23:49:08.327 INFO     Registered: Worker ('worker_e5d110b6') [0/0] (service_registry.py:196)
+23:49:08.327 INFO     Registered Worker (id: 'worker_e5d110b6') (system_controller_dispatch.py:146)
+23:49:08.327 INFO     Registered Worker (id: 'worker_e5d110b6') (system_controller_dispatch.py:146)
+23:49:08.341 INFO     Registered: Worker ('worker_22bac15b') [0/0] (service_registry.py:196)
+23:49:08.341 INFO     Registered Worker (id: 'worker_22bac15b') (system_controller_dispatch.py:146)
+23:49:08.341 INFO     Registered Worker (id: 'worker_22bac15b') (system_controller_dispatch.py:146)
+23:49:08.347 INFO     Registered: Worker ('worker_a8f8c2a0') [0/0] (service_registry.py:196)
+23:49:08.347 INFO     Registered Worker (id: 'worker_a8f8c2a0') (system_controller_dispatch.py:146)
+23:49:08.347 INFO     Registered Worker (id: 'worker_a8f8c2a0') (system_controller_dispatch.py:146)
+23:49:08.366 INFO     Registered: Worker ('worker_c25c5dbd') [0/0] (service_registry.py:196)
+23:49:08.366 INFO     Registered Worker (id: 'worker_c25c5dbd') (system_controller_dispatch.py:146)
+23:49:08.366 INFO     Registered Worker (id: 'worker_c25c5dbd') (system_controller_dispatch.py:146)
+23:49:08.412 INFO     Registered: Worker ('worker_2a2d5807') [0/0] (service_registry.py:196)
+23:49:08.412 INFO     Registered Worker (id: 'worker_2a2d5807') (system_controller_dispatch.py:146)
+23:49:08.412 INFO     Registered Worker (id: 'worker_2a2d5807') (system_controller_dispatch.py:146)
+23:49:08.415 INFO     Registered: Worker ('worker_4b38958b') [0/0] (service_registry.py:196)
+23:49:08.415 INFO     Registered Worker (id: 'worker_4b38958b') (system_controller_dispatch.py:146)
+23:49:08.415 INFO     Registered: Worker ('worker_31a88cba') [0/0] (service_registry.py:196)
+23:49:08.415 INFO     Registered Worker (id: 'worker_31a88cba') (system_controller_dispatch.py:146)
+23:49:08.416 INFO     Registered: Worker ('worker_45c972e2') [0/0] (service_registry.py:196)
+23:49:08.416 INFO     Registered Worker (id: 'worker_45c972e2') (system_controller_dispatch.py:146)
+23:49:08.416 INFO     Registered: Worker ('worker_dd94946c') [0/0] (service_registry.py:196)
+23:49:08.417 INFO     Registered Worker (id: 'worker_dd94946c') (system_controller_dispatch.py:146)
+23:49:08.417 INFO     Registered: Worker ('worker_2d8762b1') [0/0] (service_registry.py:196)
+23:49:08.417 INFO     Registered Worker (id: 'worker_2d8762b1') (system_controller_dispatch.py:146)
+23:49:08.417 INFO     Registered: Worker ('worker_9c4d5f3d') [0/0] (service_registry.py:196)
+23:49:08.417 INFO     Registered Worker (id: 'worker_9c4d5f3d') (system_controller_dispatch.py:146)
+23:49:08.418 INFO     Registered: Worker ('worker_7edf3ab6') [0/0] (service_registry.py:196)
+23:49:08.419 INFO     Registered Worker (id: 'worker_7edf3ab6') (system_controller_dispatch.py:146)
+23:49:08.419 INFO     Registered Worker (id: 'worker_7edf3ab6') (system_controller_dispatch.py:146)
+23:49:08.424 INFO     Registered: Worker ('worker_5182a028') [0/0] (service_registry.py:196)
+23:49:08.424 INFO     Registered Worker (id: 'worker_5182a028') (system_controller_dispatch.py:146)
+23:49:08.425 INFO     Registered Worker (id: 'worker_5182a028') (system_controller_dispatch.py:146)
+23:49:08.432 INFO     Registered: Worker ('worker_f388c7f6') [0/0] (service_registry.py:196)
+23:49:08.432 INFO     Registered Worker (id: 'worker_f388c7f6') (system_controller_dispatch.py:146)
+23:49:08.432 INFO     Registered Worker (id: 'worker_f388c7f6') (system_controller_dispatch.py:146)
+23:49:08.435 INFO     Registered: Worker ('worker_542118db') [0/0] (service_registry.py:196)
+23:49:08.435 INFO     Registered Worker (id: 'worker_542118db') (system_controller_dispatch.py:146)
+23:49:08.435 INFO     Registered Worker (id: 'worker_542118db') (system_controller_dispatch.py:146)
+23:49:08.452 INFO     Registered: Worker ('worker_28a625f5') [0/0] (service_registry.py:196)
+23:49:08.452 INFO     Registered Worker (id: 'worker_28a625f5') (system_controller_dispatch.py:146)
+23:49:08.452 INFO     Registered Worker (id: 'worker_28a625f5') (system_controller_dispatch.py:146)
+23:49:08.454 INFO     Registered: Worker ('worker_8aaaffa6') [0/0] (service_registry.py:196)
+23:49:08.454 INFO     Registered Worker (id: 'worker_8aaaffa6') (system_controller_dispatch.py:146)
+23:49:08.455 INFO     Registered Worker (id: 'worker_8aaaffa6') (system_controller_dispatch.py:146)
+23:49:08.464 INFO     Registered: Worker ('worker_a1d2646c') [0/0] (service_registry.py:196)
+23:49:08.464 INFO     Registered Worker (id: 'worker_a1d2646c') (system_controller_dispatch.py:146)
+23:49:08.464 INFO     Registered Worker (id: 'worker_a1d2646c') (system_controller_dispatch.py:146)
+23:49:08.467 INFO     Registered: Worker ('worker_1a0310bb') [0/0] (service_registry.py:196)
+23:49:08.467 INFO     Registered Worker (id: 'worker_1a0310bb') (system_controller_dispatch.py:146)
+23:49:08.468 INFO     Registered Worker (id: 'worker_1a0310bb') (system_controller_dispatch.py:146)
+23:49:08.468 INFO     Registered Worker (id: 'worker_4b38958b') (system_controller_dispatch.py:146)
+23:49:08.474 INFO     Registered Worker (id: 'worker_31a88cba') (system_controller_dispatch.py:146)
+23:49:08.480 INFO     Registered: Worker ('worker_1dab8dd5') [0/0] (service_registry.py:196)
+23:49:08.480 INFO     Registered Worker (id: 'worker_1dab8dd5') (system_controller_dispatch.py:146)
+23:49:08.480 INFO     Registered Worker (id: 'worker_1dab8dd5') (system_controller_dispatch.py:146)
+23:49:08.481 INFO     Registered Worker (id: 'worker_45c972e2') (system_controller_dispatch.py:146)
+23:49:08.486 INFO     Registered: Worker ('worker_315c0beb') [0/0] (service_registry.py:196)
+23:49:08.486 INFO     Registered Worker (id: 'worker_315c0beb') (system_controller_dispatch.py:146)
+23:49:08.486 INFO     Registered Worker (id: 'worker_315c0beb') (system_controller_dispatch.py:146)
+23:49:08.488 INFO     Registered: Worker ('worker_c29cc926') [0/0] (service_registry.py:196)
+23:49:08.488 INFO     Registered Worker (id: 'worker_c29cc926') (system_controller_dispatch.py:146)
+23:49:08.488 INFO     Registered Worker (id: 'worker_c29cc926') (system_controller_dispatch.py:146)
+23:49:08.488 INFO     Registered Worker (id: 'worker_dd94946c') (system_controller_dispatch.py:146)
+23:49:08.499 INFO     Registered: Worker ('worker_793ed950') [0/0] (service_registry.py:196)
+23:49:08.499 INFO     Registered Worker (id: 'worker_793ed950') (system_controller_dispatch.py:146)
+23:49:08.499 INFO     Registered Worker (id: 'worker_793ed950') (system_controller_dispatch.py:146)
+23:49:08.499 INFO     Registered: Worker ('worker_bf78624b') [0/0] (service_registry.py:196)
+23:49:08.499 INFO     Registered Worker (id: 'worker_bf78624b') (system_controller_dispatch.py:146)
+23:49:08.499 INFO     Registered Worker (id: 'worker_bf78624b') (system_controller_dispatch.py:146)
+23:49:08.504 INFO     Registered Worker (id: 'worker_2d8762b1') (system_controller_dispatch.py:146)
+23:49:08.513 INFO     Registered Worker (id: 'worker_9c4d5f3d') (system_controller_dispatch.py:146)
+23:49:08.523 INFO     Registered: Worker ('worker_b62d28f1') [0/0] (service_registry.py:196)
+23:49:08.523 INFO     Registered Worker (id: 'worker_b62d28f1') (system_controller_dispatch.py:146)
+23:49:08.523 INFO     Registered Worker (id: 'worker_b62d28f1') (system_controller_dispatch.py:146)
+23:49:08.800 INFO     System state: initializing -> configuring (system_controller.py:700)
+23:49:08.800 INFO     AIPerf System is CONFIGURING (system_controller.py:536)
+23:49:08.801 INFO     Configuring all services to start profiling (system_controller.py:713)
+23:49:08.802 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:91)
+23:49:08.802 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:91)
+23:49:08.802 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:91)
+23:49:08.802 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:91)
+23:49:08.802 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:91)
+23:49:08.802 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:91)
+23:49:08.802 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:91)
+23:49:08.802 INFO     Configuring tokenizers for inference result parser (resolve_alias: True) (inference_result_parser.py:91)
+23:49:08.802 INFO     Waiting for dataset to be configured before configuring timing (manager.py:149)
+23:49:08.814 INFO     Server Metrics: Capturing baseline metrics... (manager.py:333)
+23:49:08.822 INFO     GPU Telemetry: Capturing baseline metrics from http://localhost:9400/metrics (manager.py:285)
+23:49:08.831 WARNING  GPU Telemetry: http://localhost:9401/metrics is not reachable (manager.py:256)
+23:49:08.831 INFO     DCGM telemetry enabled - 1/1 endpoint(s) reachable (system_controller.py:1022)
+23:49:08.839 INFO     Skipping unsupported summary metric: http_request_size_bytes (data_collector.py:308)
+23:49:08.839 INFO     Skipping unsupported summary metric: http_response_size_bytes (data_collector.py:308)
+23:49:08.841 INFO     Server metrics enabled - 1/1 endpoint(s) reachable. (system_controller.py:1048)
+23:49:08.870 INFO     Memory-mapped dataset cache HIT (key=b833319d9fabf56472233c294d4140a3); skipping tokenizer + composer. (dataset_manager.py:225)
+23:49:08.871 INFO     Restored mmap cache file dataset.dat via hardlink in 0.000s (0.00 GiB) (mmap_cache.py:514)
+23:49:08.871 INFO     Restored mmap cache file index.dat via hardlink in 0.000s (0.00 GiB) (mmap_cache.py:514)
+23:49:08.871 INFO     Restored mmap cache files in 0.001s via dataset=hardlink index=hardlink (dataset=0.00 GiB, index=0.00 GiB) (mmap_cache.py:558)
+23:49:08.956 INFO     sampling strategy: sequential, unique conversations: 640, unique turn count: 640 (dataset_manager.py:885)
+23:49:08.970 INFO     Initialized 1 phase(s): ['Profiling'] (phase_orchestrator.py:341)
+23:49:09.095 INFO     Dataset client initialized and freed 0 conversations from memory (dataset_manager.py:364)
+23:49:12.213 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/main "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.247 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/main "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.283 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/main "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.283 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/main "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.295 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/main "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.302 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/main "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.340 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/main "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.340 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/main "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.373 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+23:49:12.413 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+23:49:12.446 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+23:49:12.456 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+23:49:12.458 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+23:49:12.502 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+23:49:12.507 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+23:49:12.527 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.541 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found" (_client.py:1025)
+23:49:12.577 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.605 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.612 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.618 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.650 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.665 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:12.919 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:13.404 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:13.407 INFO     Initialized tokenizers: {'Qwen/Qwen3-8B': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-8B'}} in 4.60 seconds (inference_result_parser.py:117)
+23:49:13.437 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:13.439 INFO     Initialized tokenizers: {'Qwen/Qwen3-8B': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-8B'}} in 4.64 seconds (inference_result_parser.py:117)
+23:49:13.486 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:13.490 INFO     Initialized tokenizers: {'Qwen/Qwen3-8B': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-8B'}} in 4.69 seconds (inference_result_parser.py:117)
+23:49:13.507 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:13.510 INFO     Initialized tokenizers: {'Qwen/Qwen3-8B': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-8B'}} in 4.71 seconds (inference_result_parser.py:117)
+23:49:13.554 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:13.556 INFO     Initialized tokenizers: {'Qwen/Qwen3-8B': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-8B'}} in 4.75 seconds (inference_result_parser.py:117)
+23:49:13.584 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:13.586 INFO     Initialized tokenizers: {'Qwen/Qwen3-8B': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-8B'}} in 4.78 seconds (inference_result_parser.py:117)
+23:49:13.626 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:13.628 INFO     Initialized tokenizers: {'Qwen/Qwen3-8B': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-8B'}} in 4.83 seconds (inference_result_parser.py:117)
+23:49:13.884 INFO     HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK" (_client.py:1025)
+23:49:13.890 INFO     Initialized tokenizers: {'Qwen/Qwen3-8B': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-8B'}} in 5.09 seconds (inference_result_parser.py:117)
+23:49:13.891 INFO     All services configured in 5.09 seconds (system_controller.py:722)
+23:49:13.891 INFO     System state: configuring -> ready (system_controller.py:700)
+23:49:13.891 INFO     AIPerf System is CONFIGURED (system_controller.py:539)
+23:49:13.893 INFO     Server Metrics: Started 1 collector(s) successfully (manager.py:487)
+23:49:13.894 INFO     All services started profiling successfully (system_controller.py:742)
+23:49:13.894 INFO     System state: ready -> profiling (system_controller.py:700)
+23:49:13.894 INFO     AIPerf System is PROFILING (system_controller.py:548)
+23:49:13.894 INFO     Waiting for result domains: profile, server_metrics, telemetry (system_controller.py:1635)
+23:49:13.895 INFO     Creating interval generator: pattern=constant, rate=2.0, smoothness=None (request_rate.py:116)
+23:49:13.895 NOTICE   Phase profiling (profiling) started | phase_index=0 | profiling_index=0 | target: 640 requests (runner.py:660)
+23:49:13.896 INFO     Credit phase start: profiling (records_manager.py:1406)
+23:49:13.896 INFO     Rate loop pacing via timerfd (kernel hrtimer) (request_rate.py:146)
+Profiling: 0/640 |[32m          [0m|   0% [00:00<?]Profiling: 0/640 |[32m          [0m|   0% [00:00<?]                                            23:49:17.319 WARNING  OSL mismatch: got 104 tokens (requested 512, diff -79.7%) (osl_mismatch_metrics.py:193)
+23:49:17.321 WARNING  Token usage is reported but no prompt-cache read tokens were seen (usage.prompt_tokens_details.cached_tokens absent). If your server uses prefix/KV caching, enable cache reporting so AIPerf can populate the prompt-cache metrics: vLLM --enable-prompt-tokens-details, SGLang --enable-cache-report (TRT-LLM reports it by default). (records_manager.py:1011)
+23:49:17.321 WARNING  Token usage is reported but no prompt-cache read tokens were seen (usage.prompt_tokens_details.cached_tokens absent). If your server uses prefix/KV caching, enable cache reporting so AIPerf can populate the prompt-cache metrics: vLLM --enable-prompt-tokens-details, SGLang --enable-cache-report (TRT-LLM reports it by default). (accumulator.py:244)
+23:49:18.311 WARNING  OSL mismatch: got 99 tokens (requested 512, diff -80.7%) (osl_mismatch_metrics.py:193)
+23:49:19.909 WARNING  OSL mismatch: got 67 tokens (requested 512, diff -86.9%) (osl_mismatch_metrics.py:193)
+23:49:20.789 WARNING  OSL mismatch: got 351 tokens (requested 512, diff -31.4%) (osl_mismatch_metrics.py:193)
+23:49:21.101 WARNING  OSL mismatch: got 418 tokens (requested 512, diff -18.4%) (osl_mismatch_metrics.py:193)
+23:49:22.594 WARNING  OSL mismatch: got 107 tokens (requested 512, diff -79.1%) (osl_mismatch_metrics.py:193)
+23:49:22.606 WARNING  OSL mismatch: got 73 tokens (requested 512, diff -85.7%) (osl_mismatch_metrics.py:193)
+23:49:23.418 WARNING  OSL mismatch: got 436 tokens (requested 512, diff -14.8%) (osl_mismatch_metrics.py:193)
+Profiling: 9/640 |[32m▏         [0m|   1% [00:09<11:40]Profiling: 9/640 |[32m▏         [0m|   1% [00:09<11:40]23:49:23.908 WARNING  OSL mismatch: got 121 tokens (requested 512, diff -76.4%) (osl_mismatch_metrics.py:193)
+23:49:24.904 WARNING  OSL mismatch: got 184 tokens (requested 512, diff -64.1%) (osl_mismatch_metrics.py:193)
+23:49:29.356 WARNING  OSL mismatch: got 107 tokens (requested 512, diff -79.1%) (osl_mismatch_metrics.py:193)
+23:49:29.693 WARNING  OSL mismatch: got 348 tokens (requested 512, diff -32.0%) (osl_mismatch_metrics.py:193)
+Profiling: 18/640 |[32m▎         [0m|   3% [00:15<08:48]Profiling: 18/640 |[32m▎         [0m|   3% [00:15<08:48]23:49:32.398 WARNING  OSL mismatch: got 433 tokens (requested 512, diff -15.4%) (osl_mismatch_metrics.py:193)
+23:49:34.929 WARNING  OSL mismatch: got 403 tokens (requested 512, diff -21.3%) (osl_mismatch_metrics.py:193)
+Profiling: 28/640 |[32m▍         [0m|   4% [00:21<07:26]Profiling: 28/640 |[32m▍         [0m|   4% [00:21<07:26]23:49:36.548 WARNING  OSL mismatch: got 67 tokens (requested 512, diff -86.9%) (osl_mismatch_metrics.py:193)
+23:49:36.673 WARNING  OSL mismatch: got 362 tokens (requested 512, diff -29.3%) (osl_mismatch_metrics.py:193)
+23:49:37.789 WARNING  OSL mismatch: got 43 tokens (requested 512, diff -91.6%) (osl_mismatch_metrics.py:193)
+23:49:37.975 WARNING  OSL mismatch: got 177 tokens (requested 512, diff -65.4%) (osl_mismatch_metrics.py:193)
+23:49:38.893 WARNING  OSL mismatch: got 281 tokens (requested 512, diff -45.1%) (osl_mismatch_metrics.py:193)
+Profiling: 39/640 |[32m▌         [0m|   6% [00:25<05:43]Profiling: 39/640 |[32m▌         [0m|   6% [00:25<05:43]23:49:40.823 WARNING  OSL mismatch: got 183 tokens (requested 512, diff -64.3%) (osl_mismatch_metrics.py:193)
+23:49:41.820 WARNING  OSL mismatch: got 374 tokens (requested 512, diff -27.0%) (osl_mismatch_metrics.py:193)
+Profiling: 46/640 |[32m▋         [0m|   7% [00:29<05:39]Profiling: 46/640 |[32m▋         [0m|   7% [00:29<05:39]23:49:45.112 WARNING  OSL mismatch: got 289 tokens (requested 512, diff -43.6%) (osl_mismatch_metrics.py:193)
+23:49:45.549 WARNING  OSL mismatch: got 208 tokens (requested 512, diff -59.4%) (osl_mismatch_metrics.py:193)
+23:49:45.841 WARNING  OSL mismatch: got 369 tokens (requested 512, diff -27.9%) (osl_mismatch_metrics.py:193)
+23:49:47.660 WARNING  OSL mismatch: got 43 tokens (requested 512, diff -91.6%) (osl_mismatch_metrics.py:193)
+Profiling: 54/640 |[32m▊         [0m|   8% [00:33<05:21]Profiling: 54/640 |[32m▊         [0m|   8% [00:33<05:21]23:49:48.347 WARNING  OSL mismatch: got 442 tokens (requested 512, diff -13.7%) (osl_mismatch_metrics.py:193)
+23:49:51.807 WARNING  OSL mismatch: got 437 tokens (requested 512, diff -14.6%) (osl_mismatch_metrics.py:193)
+23:49:52.696 WARNING  OSL mismatch: got 263 tokens (requested 512, diff -48.6%) (osl_mismatch_metrics.py:193)
+Profiling: 65/640 |[32m█         [0m|  10% [00:39<05:14]Profiling: 65/640 |[32m█         [0m|  10% [00:39<05:14]23:49:56.064 WARNING  OSL mismatch: got 427 tokens (requested 512, diff -16.6%) (osl_mismatch_metrics.py:193)
+23:49:56.076 WARNING  OSL mismatch: got 462 tokens (requested 512, diff -9.8%) (osl_mismatch_metrics.py:193)
+23:49:56.472 WARNING  OSL mismatch: got 390 tokens (requested 512, diff -23.8%) (osl_mismatch_metrics.py:193)
+Profiling: 73/640 |[32m█▏        [0m|  11% [00:43<05:02]Profiling: 73/640 |[32m█▏        [0m|  11% [00:43<05:02]23:49:58.925 WARNING  OSL mismatch: got 132 tokens (requested 512, diff -74.2%) (osl_mismatch_metrics.py:193)
+23:49:59.626 WARNING  OSL mismatch: got 102 tokens (requested 512, diff -80.1%) (osl_mismatch_metrics.py:193)
+23:50:00.932 WARNING  OSL mismatch: got 164 tokens (requested 512, diff -68.0%) (osl_mismatch_metrics.py:193)
+Profiling: 83/640 |[32m█▎        [0m|  13% [00:47<04:32]Profiling: 83/640 |[32m█▎        [0m|  13% [00:47<04:32]23:50:02.927 WARNING  OSL mismatch: got 141 tokens (requested 512, diff -72.5%) (osl_mismatch_metrics.py:193)
+23:50:03.824 WARNING  OSL mismatch: got 402 tokens (requested 512, diff -21.5%) (osl_mismatch_metrics.py:193)
+23:50:04.418 WARNING  OSL mismatch: got 70 tokens (requested 512, diff -86.3%) (osl_mismatch_metrics.py:193)
+Profiling: 91/640 |[32m█▍        [0m|  14% [00:51<04:30]Profiling: 91/640 |[32m█▍        [0m|  14% [00:51<04:30]23:50:06.130 WARNING  OSL mismatch: got 115 tokens (requested 512, diff -77.5%) (osl_mismatch_metrics.py:193)
+23:50:08.207 WARNING  OSL mismatch: got 467 tokens (requested 512, diff -8.8%) (osl_mismatch_metrics.py:193)
+23:50:08.506 WARNING  OSL mismatch: got 101 tokens (requested 512, diff -80.3%) (osl_mismatch_metrics.py:193)
+Profiling: 98/640 |[32m█▌        [0m|  15% [00:55<04:37]Profiling: 98/640 |[32m█▌        [0m|  15% [00:55<04:37]23:50:14.003 WARNING  OSL mismatch: got 465 tokens (requested 512, diff -9.2%) (osl_mismatch_metrics.py:193)
+23:50:14.452 WARNING  OSL mismatch: got 194 tokens (requested 512, diff -62.1%) (osl_mismatch_metrics.py:193)
+Profiling: 107/640 |[32m█▋        [0m|  17% [01:01<04:59]Profiling: 107/640 |[32m█▋        [0m|  17% [01:01<04:59]23:50:16.224 WARNING  OSL mismatch: got 150 tokens (requested 512, diff -70.7%) (osl_mismatch_metrics.py:193)
+23:50:19.713 WARNING  OSL mismatch: got 18 tokens (requested 512, diff -96.5%) (osl_mismatch_metrics.py:193)
+Profiling: 116/640 |[32m█▊        [0m|  18% [01:05<04:35]Profiling: 116/640 |[32m█▊        [0m|  18% [01:05<04:35]23:50:21.737 WARNING  OSL mismatch: got 367 tokens (requested 512, diff -28.3%) (osl_mismatch_metrics.py:193)
+23:50:23.803 WARNING  OSL mismatch: got 268 tokens (requested 512, diff -47.7%) (osl_mismatch_metrics.py:193)
+Profiling: 124/640 |[32m█▉        [0m|  19% [01:10<04:27]Profiling: 124/640 |[32m█▉        [0m|  19% [01:10<04:27]23:50:29.801 WARNING  OSL mismatch: got 196 tokens (requested 512, diff -61.7%) (osl_mismatch_metrics.py:193)
+Profiling: 132/640 |[32m██        [0m|  21% [01:16<04:57]Profiling: 132/640 |[32m██        [0m|  21% [01:16<04:57]23:50:30.067 WARNING  OSL mismatch: got 100 tokens (requested 512, diff -80.5%) (osl_mismatch_metrics.py:193)
+23:50:32.331 WARNING  OSL mismatch: got 67 tokens (requested 512, diff -86.9%) (osl_mismatch_metrics.py:193)
+Profiling: 140/640 |[32m██▏       [0m|  22% [01:20<04:40]Profiling: 140/640 |[32m██▏       [0m|  22% [01:20<04:40]23:50:34.127 WARNING  OSL mismatch: got 365 tokens (requested 512, diff -28.7%) (osl_mismatch_metrics.py:193)
+23:50:34.444 WARNING  OSL mismatch: got 468 tokens (requested 512, diff -8.6%) (osl_mismatch_metrics.py:193)
+23:50:35.944 WARNING  OSL mismatch: got 107 tokens (requested 512, diff -79.1%) (osl_mismatch_metrics.py:193)
+23:50:36.417 WARNING  OSL mismatch: got 286 tokens (requested 512, diff -44.1%) (osl_mismatch_metrics.py:193)
+Profiling: 148/640 |[32m██▎       [0m|  23% [01:24<04:26]Profiling: 148/640 |[32m██▎       [0m|  23% [01:24<04:26]23:50:39.249 WARNING  OSL mismatch: got 295 tokens (requested 512, diff -42.4%) (osl_mismatch_metrics.py:193)
+23:50:40.255 WARNING  OSL mismatch: got 74 tokens (requested 512, diff -85.5%) (osl_mismatch_metrics.py:193)
+23:50:40.479 WARNING  OSL mismatch: got 2 tokens (requested 512, diff -99.6%) (osl_mismatch_metrics.py:193)
+23:50:40.979 WARNING  OSL mismatch: got 248 tokens (requested 512, diff -51.6%) (osl_mismatch_metrics.py:193)
+Profiling: 160/640 |[32m██▌       [0m|  25% [01:28<03:41]Profiling: 160/640 |[32m██▌       [0m|  25% [01:28<03:41]23:50:42.334 WARNING  OSL mismatch: got 163 tokens (requested 512, diff -68.2%) (osl_mismatch_metrics.py:193)
+23:50:42.757 WARNING  OSL mismatch: got 219 tokens (requested 512, diff -57.2%) (osl_mismatch_metrics.py:193)
+23:50:44.916 WARNING  OSL mismatch: got 64 tokens (requested 512, diff -87.5%) (osl_mismatch_metrics.py:193)
+23:50:45.424 WARNING  OSL mismatch: got 49 tokens (requested 512, diff -90.4%) (osl_mismatch_metrics.py:193)
+23:50:45.656 WARNING  OSL mismatch: got 28 tokens (requested 512, diff -94.5%) (osl_mismatch_metrics.py:193)
+23:50:45.836 WARNING  OSL mismatch: got 461 tokens (requested 512, diff -10.0%) (osl_mismatch_metrics.py:193)
+Profiling: 174/640 |[32m██▋       [0m|  27% [01:32<03:02]Profiling: 174/640 |[32m██▋       [0m|  27% [01:32<03:02]23:50:47.988 WARNING  OSL mismatch: got 120 tokens (requested 512, diff -76.6%) (osl_mismatch_metrics.py:193)
+23:50:48.113 WARNING  OSL mismatch: got 204 tokens (requested 512, diff -60.2%) (osl_mismatch_metrics.py:193)
+Profiling: 182/640 |[32m██▊       [0m|  28% [01:36<03:11]Profiling: 182/640 |[32m██▊       [0m|  28% [01:36<03:11]23:50:54.426 WARNING  OSL mismatch: got 316 tokens (requested 512, diff -38.3%) (osl_mismatch_metrics.py:193)
+23:50:55.423 WARNING  OSL mismatch: got 52 tokens (requested 512, diff -89.8%) (osl_mismatch_metrics.py:193)
+23:50:57.631 WARNING  OSL mismatch: got 63 tokens (requested 512, diff -87.7%) (osl_mismatch_metrics.py:193)
+Profiling: 191/640 |[32m██▉       [0m|  30% [01:44<04:07]Profiling: 191/640 |[32m██▉       [0m|  30% [01:44<04:07]23:50:58.174 WARNING  OSL mismatch: got 262 tokens (requested 512, diff -48.8%) (osl_mismatch_metrics.py:193)
+23:51:00.217 WARNING  OSL mismatch: got 264 tokens (requested 512, diff -48.4%) (osl_mismatch_metrics.py:193)
+Profiling: 201/640 |[32m███▏      [0m|  31% [01:48<03:41]Profiling: 201/640 |[32m███▏      [0m|  31% [01:48<03:41]23:51:03.232 WARNING  OSL mismatch: got 178 tokens (requested 512, diff -65.2%) (osl_mismatch_metrics.py:193)
+23:51:05.207 WARNING  OSL mismatch: got 278 tokens (requested 512, diff -45.7%) (osl_mismatch_metrics.py:193)
+Profiling: 209/640 |[32m███▎      [0m|  33% [01:52<03:36]Profiling: 209/640 |[32m███▎      [0m|  33% [01:52<03:36]23:51:10.785 WARNING  OSL mismatch: got 238 tokens (requested 512, diff -53.5%) (osl_mismatch_metrics.py:193)
+23:51:11.500 WARNING  OSL mismatch: got 80 tokens (requested 512, diff -84.4%) (osl_mismatch_metrics.py:193)
+23:51:11.766 WARNING  OSL mismatch: got 348 tokens (requested 512, diff -32.0%) (osl_mismatch_metrics.py:193)
+Profiling: 219/640 |[32m███▍      [0m|  34% [01:58<03:44]Profiling: 219/640 |[32m███▍      [0m|  34% [01:58<03:44]23:51:15.852 WARNING  OSL mismatch: got 59 tokens (requested 512, diff -88.5%) (osl_mismatch_metrics.py:193)
+Profiling: 226/640 |[32m███▌      [0m|  35% [02:04<04:13]Profiling: 226/640 |[32m███▌      [0m|  35% [02:04<04:13]23:51:18.234 WARNING  OSL mismatch: got 253 tokens (requested 512, diff -50.6%) (osl_mismatch_metrics.py:193)
+23:51:21.544 WARNING  OSL mismatch: got 172 tokens (requested 512, diff -66.4%) (osl_mismatch_metrics.py:193)
+Profiling: 236/640 |[32m███▋      [0m|  37% [02:08<03:38]Profiling: 236/640 |[32m███▋      [0m|  37% [02:08<03:38]23:51:23.773 WARNING  OSL mismatch: got 310 tokens (requested 512, diff -39.5%) (osl_mismatch_metrics.py:193)
+23:51:24.406 WARNING  OSL mismatch: got 485 tokens (requested 512, diff -5.3%) (osl_mismatch_metrics.py:193)
+23:51:25.128 WARNING  OSL mismatch: got 172 tokens (requested 512, diff -66.4%) (osl_mismatch_metrics.py:193)
+23:51:25.150 WARNING  OSL mismatch: got 261 tokens (requested 512, diff -49.0%) (osl_mismatch_metrics.py:193)
+Profiling: 244/640 |[32m███▊      [0m|  38% [02:12<03:30]Profiling: 244/640 |[32m███▊      [0m|  38% [02:12<03:30]23:51:30.271 WARNING  OSL mismatch: got 116 tokens (requested 512, diff -77.3%) (osl_mismatch_metrics.py:193)
+Profiling: 253/640 |[32m███▉      [0m|  40% [02:18<03:41]Profiling: 253/640 |[32m███▉      [0m|  40% [02:18<03:41]23:51:35.094 WARNING  OSL mismatch: got 162 tokens (requested 512, diff -68.4%) (osl_mismatch_metrics.py:193)
+23:51:35.650 WARNING  OSL mismatch: got 230 tokens (requested 512, diff -55.1%) (osl_mismatch_metrics.py:193)
+Profiling: 260/640 |[32m████      [0m|  41% [02:22<03:37]Profiling: 260/640 |[32m████      [0m|  41% [02:22<03:37]23:51:36.111 WARNING  OSL mismatch: got 426 tokens (requested 512, diff -16.8%) (osl_mismatch_metrics.py:193)
+Profiling: 268/640 |[32m████▏     [0m|  42% [02:24<02:57]Profiling: 268/640 |[32m████▏     [0m|  42% [02:24<02:57]23:51:40.094 WARNING  OSL mismatch: got 450 tokens (requested 512, diff -12.1%) (osl_mismatch_metrics.py:193)
+Profiling: 275/640 |[32m████▎     [0m|  43% [02:28<03:03]Profiling: 275/640 |[32m████▎     [0m|  43% [02:28<03:03]23:51:42.932 WARNING  OSL mismatch: got 389 tokens (requested 512, diff -24.0%) (osl_mismatch_metrics.py:193)
+23:51:45.548 WARNING  OSL mismatch: got 57 tokens (requested 512, diff -88.9%) (osl_mismatch_metrics.py:193)
+Profiling: 284/640 |[32m████▍     [0m|  44% [02:32<02:52]Profiling: 284/640 |[32m████▍     [0m|  44% [02:32<02:52]23:51:47.807 WARNING  OSL mismatch: got 101 tokens (requested 512, diff -80.3%) (osl_mismatch_metrics.py:193)
+23:51:49.252 WARNING  OSL mismatch: got 72 tokens (requested 512, diff -85.9%) (osl_mismatch_metrics.py:193)
+23:51:49.287 WARNING  OSL mismatch: got 128 tokens (requested 512, diff -75.0%) (osl_mismatch_metrics.py:193)
+23:51:49.744 WARNING  OSL mismatch: got 418 tokens (requested 512, diff -18.4%) (osl_mismatch_metrics.py:193)
+Profiling: 296/640 |[32m████▋     [0m|  46% [02:36<02:26]Profiling: 296/640 |[32m████▋     [0m|  46% [02:36<02:26]Profiling: 303/640 |[32m████▋     [0m|  47% [02:42<02:58]Profiling: 303/640 |[32m████▋     [0m|  47% [02:42<02:58]23:51:56.246 WARNING  OSL mismatch: got 43 tokens (requested 512, diff -91.6%) (osl_mismatch_metrics.py:193)
+23:51:57.274 WARNING  OSL mismatch: got 195 tokens (requested 512, diff -61.9%) (osl_mismatch_metrics.py:193)
+23:51:57.993 WARNING  OSL mismatch: got 63 tokens (requested 512, diff -87.7%) (osl_mismatch_metrics.py:193)
+23:51:59.618 WARNING  OSL mismatch: got 32 tokens (requested 512, diff -93.8%) (osl_mismatch_metrics.py:193)
+Profiling: 312/640 |[32m████▉     [0m|  49% [02:46<02:45]Profiling: 312/640 |[32m████▉     [0m|  49% [02:46<02:45]23:52:00.642 WARNING  OSL mismatch: got 131 tokens (requested 512, diff -74.4%) (osl_mismatch_metrics.py:193)
+23:52:02.569 WARNING  OSL mismatch: got 306 tokens (requested 512, diff -40.2%) (osl_mismatch_metrics.py:193)
+Profiling: 323/640 |[32m█████     [0m|  50% [02:50<02:24]Profiling: 323/640 |[32m█████     [0m|  50% [02:50<02:24]23:52:03.931 WARNING  OSL mismatch: got 139 tokens (requested 512, diff -72.9%) (osl_mismatch_metrics.py:193)
+23:52:05.055 WARNING  OSL mismatch: got 338 tokens (requested 512, diff -34.0%) (osl_mismatch_metrics.py:193)
+23:52:05.380 WARNING  OSL mismatch: got 176 tokens (requested 512, diff -65.6%) (osl_mismatch_metrics.py:193)
+Profiling: 330/640 |[32m█████▏    [0m|  52% [02:52<02:08]Profiling: 330/640 |[32m█████▏    [0m|  52% [02:52<02:08]23:52:09.045 WARNING  OSL mismatch: got 457 tokens (requested 512, diff -10.7%) (osl_mismatch_metrics.py:193)
+23:52:09.132 WARNING  OSL mismatch: got 124 tokens (requested 512, diff -75.8%) (osl_mismatch_metrics.py:193)
+23:52:09.295 WARNING  OSL mismatch: got 271 tokens (requested 512, diff -47.1%) (osl_mismatch_metrics.py:193)
+23:52:09.900 WARNING  OSL mismatch: got 469 tokens (requested 512, diff -8.4%) (osl_mismatch_metrics.py:193)
+Profiling: 341/640 |[32m█████▎    [0m|  53% [02:56<01:58]Profiling: 341/640 |[32m█████▎    [0m|  53% [02:56<01:58]23:52:09.922 WARNING  OSL mismatch: got 253 tokens (requested 512, diff -50.6%) (osl_mismatch_metrics.py:193)
+23:52:09.989 WARNING  OSL mismatch: got 358 tokens (requested 512, diff -30.1%) (osl_mismatch_metrics.py:193)
+23:52:10.621 WARNING  OSL mismatch: got 273 tokens (requested 512, diff -46.7%) (osl_mismatch_metrics.py:193)
+23:52:13.153 WARNING  OSL mismatch: got 54 tokens (requested 512, diff -89.5%) (osl_mismatch_metrics.py:193)
+23:52:13.183 WARNING  OSL mismatch: got 274 tokens (requested 512, diff -46.5%) (osl_mismatch_metrics.py:193)
+23:52:13.576 WARNING  OSL mismatch: got 339 tokens (requested 512, diff -33.8%) (osl_mismatch_metrics.py:193)
+Profiling: 350/640 |[32m█████▍    [0m|  55% [03:00<01:59]Profiling: 350/640 |[32m█████▍    [0m|  55% [03:00<01:59]23:52:14.279 WARNING  OSL mismatch: got 83 tokens (requested 512, diff -83.8%) (osl_mismatch_metrics.py:193)
+23:52:15.820 WARNING  OSL mismatch: got 391 tokens (requested 512, diff -23.6%) (osl_mismatch_metrics.py:193)
+23:52:18.122 WARNING  OSL mismatch: got 48 tokens (requested 512, diff -90.6%) (osl_mismatch_metrics.py:193)
+23:52:19.345 WARNING  OSL mismatch: got 259 tokens (requested 512, diff -49.4%) (osl_mismatch_metrics.py:193)
+Profiling: 360/640 |[32m█████▋    [0m|  56% [03:06<02:11]Profiling: 360/640 |[32m█████▋    [0m|  56% [03:06<02:11]23:52:20.873 WARNING  OSL mismatch: got 163 tokens (requested 512, diff -68.2%) (osl_mismatch_metrics.py:193)
+23:52:24.911 WARNING  OSL mismatch: got 46 tokens (requested 512, diff -91.0%) (osl_mismatch_metrics.py:193)
+Profiling: 369/640 |[32m█████▊    [0m|  58% [03:12<02:22]Profiling: 369/640 |[32m█████▊    [0m|  58% [03:12<02:22]23:52:28.994 WARNING  OSL mismatch: got 138 tokens (requested 512, diff -73.0%) (osl_mismatch_metrics.py:193)
+23:52:30.814 WARNING  OSL mismatch: got 117 tokens (requested 512, diff -77.1%) (osl_mismatch_metrics.py:193)
+23:52:31.817 WARNING  OSL mismatch: got 323 tokens (requested 512, diff -36.9%) (osl_mismatch_metrics.py:193)
+Profiling: 379/640 |[32m█████▉    [0m|  59% [03:18<02:23]Profiling: 379/640 |[32m█████▉    [0m|  59% [03:18<02:23]23:52:32.826 WARNING  OSL mismatch: got 41 tokens (requested 512, diff -92.0%) (osl_mismatch_metrics.py:193)
+23:52:33.967 WARNING  OSL mismatch: got 363 tokens (requested 512, diff -29.1%) (osl_mismatch_metrics.py:193)
+23:52:35.202 WARNING  OSL mismatch: got 200 tokens (requested 512, diff -60.9%) (osl_mismatch_metrics.py:193)
+23:52:35.295 WARNING  OSL mismatch: got 81 tokens (requested 512, diff -84.2%) (osl_mismatch_metrics.py:193)
+Profiling: 389/640 |[32m██████    [0m|  61% [03:22<02:06]Profiling: 389/640 |[32m██████    [0m|  61% [03:22<02:06]23:52:38.988 WARNING  OSL mismatch: got 185 tokens (requested 512, diff -63.9%) (osl_mismatch_metrics.py:193)
+23:52:39.110 WARNING  OSL mismatch: got 79 tokens (requested 512, diff -84.6%) (osl_mismatch_metrics.py:193)
+23:52:39.899 WARNING  OSL mismatch: got 364 tokens (requested 512, diff -28.9%) (osl_mismatch_metrics.py:193)
+Profiling: 396/640 |[32m██████▏   [0m|  62% [03:26<02:06]Profiling: 396/640 |[32m██████▏   [0m|  62% [03:26<02:06]23:52:40.983 WARNING  OSL mismatch: got 140 tokens (requested 512, diff -72.7%) (osl_mismatch_metrics.py:193)
+23:52:41.618 WARNING  OSL mismatch: got 124 tokens (requested 512, diff -75.8%) (osl_mismatch_metrics.py:193)
+Profiling: 404/640 |[32m██████▎   [0m|  63% [03:30<02:01]Profiling: 404/640 |[32m██████▎   [0m|  63% [03:30<02:01]23:52:45.264 WARNING  OSL mismatch: got 62 tokens (requested 512, diff -87.9%) (osl_mismatch_metrics.py:193)
+23:52:45.801 WARNING  OSL mismatch: got 192 tokens (requested 512, diff -62.5%) (osl_mismatch_metrics.py:193)
+23:52:47.144 WARNING  OSL mismatch: got 407 tokens (requested 512, diff -20.5%) (osl_mismatch_metrics.py:193)
+Profiling: 413/640 |[32m██████▍   [0m|  65% [03:34<01:51]Profiling: 413/640 |[32m██████▍   [0m|  65% [03:34<01:51]23:52:48.920 WARNING  OSL mismatch: got 64 tokens (requested 512, diff -87.5%) (osl_mismatch_metrics.py:193)
+23:52:50.112 WARNING  OSL mismatch: got 440 tokens (requested 512, diff -14.1%) (osl_mismatch_metrics.py:193)
+23:52:51.818 WARNING  OSL mismatch: got 400 tokens (requested 512, diff -21.9%) (osl_mismatch_metrics.py:193)
+Profiling: 421/640 |[32m██████▌   [0m|  66% [03:38<01:48]Profiling: 421/640 |[32m██████▌   [0m|  66% [03:38<01:48]23:52:52.830 WARNING  OSL mismatch: got 76 tokens (requested 512, diff -85.2%) (osl_mismatch_metrics.py:193)
+Profiling: 428/640 |[32m██████▋   [0m|  67% [03:42<01:49]Profiling: 428/640 |[32m██████▋   [0m|  67% [03:42<01:49]23:52:57.928 WARNING  OSL mismatch: got 445 tokens (requested 512, diff -13.1%) (osl_mismatch_metrics.py:193)
+23:52:58.365 WARNING  OSL mismatch: got 397 tokens (requested 512, diff -22.5%) (osl_mismatch_metrics.py:193)
+23:53:00.730 WARNING  OSL mismatch: got 78 tokens (requested 512, diff -84.8%) (osl_mismatch_metrics.py:193)
+23:53:01.741 WARNING  OSL mismatch: got 333 tokens (requested 512, diff -35.0%) (osl_mismatch_metrics.py:193)
+Profiling: 437/640 |[32m██████▊   [0m|  68% [03:48<01:54]Profiling: 437/640 |[32m██████▊   [0m|  68% [03:48<01:54]23:53:02.277 WARNING  OSL mismatch: got 19 tokens (requested 512, diff -96.3%) (osl_mismatch_metrics.py:193)
+23:53:02.942 WARNING  OSL mismatch: got 252 tokens (requested 512, diff -50.8%) (osl_mismatch_metrics.py:193)
+Profiling: 444/640 |[32m██████▉   [0m|  69% [03:50<01:36]Profiling: 444/640 |[32m██████▉   [0m|  69% [03:50<01:36]23:53:08.376 WARNING  OSL mismatch: got 210 tokens (requested 512, diff -59.0%) (osl_mismatch_metrics.py:193)
+23:53:08.538 WARNING  OSL mismatch: got 339 tokens (requested 512, diff -33.8%) (osl_mismatch_metrics.py:193)
+Profiling: 454/640 |[32m███████   [0m|  71% [03:56<01:38]Profiling: 454/640 |[32m███████   [0m|  71% [03:56<01:38]23:53:12.612 WARNING  OSL mismatch: got 410 tokens (requested 512, diff -19.9%) (osl_mismatch_metrics.py:193)
+23:53:12.814 WARNING  OSL mismatch: got 34 tokens (requested 512, diff -93.4%) (osl_mismatch_metrics.py:193)
+23:53:13.894 WARNING  OSL mismatch: got 299 tokens (requested 512, diff -41.6%) (osl_mismatch_metrics.py:193)
+Profiling: 462/640 |[32m███████▏  [0m|  72% [04:00<01:32]Profiling: 462/640 |[32m███████▏  [0m|  72% [04:00<01:32]23:53:15.751 WARNING  OSL mismatch: got 169 tokens (requested 512, diff -67.0%) (osl_mismatch_metrics.py:193)
+23:53:16.599 WARNING  OSL mismatch: got 465 tokens (requested 512, diff -9.2%) (osl_mismatch_metrics.py:193)
+23:53:17.142 WARNING  OSL mismatch: got 172 tokens (requested 512, diff -66.4%) (osl_mismatch_metrics.py:193)
+23:53:17.701 WARNING  OSL mismatch: got 84 tokens (requested 512, diff -83.6%) (osl_mismatch_metrics.py:193)
+Profiling: 473/640 |[32m███████▍  [0m|  74% [04:04<01:17]Profiling: 473/640 |[32m███████▍  [0m|  74% [04:04<01:17]23:53:18.727 WARNING  OSL mismatch: got 123 tokens (requested 512, diff -76.0%) (osl_mismatch_metrics.py:193)
+23:53:19.459 WARNING  OSL mismatch: got 290 tokens (requested 512, diff -43.4%) (osl_mismatch_metrics.py:193)
+Profiling: 481/640 |[32m███████▌  [0m|  75% [04:06<01:04]Profiling: 481/640 |[32m███████▌  [0m|  75% [04:06<01:04]23:53:21.643 WARNING  OSL mismatch: got 14 tokens (requested 512, diff -97.3%) (osl_mismatch_metrics.py:193)
+23:53:22.084 WARNING  OSL mismatch: got 260 tokens (requested 512, diff -49.2%) (osl_mismatch_metrics.py:193)
+23:53:22.177 WARNING  OSL mismatch: got 231 tokens (requested 512, diff -54.9%) (osl_mismatch_metrics.py:193)
+23:53:22.910 WARNING  OSL mismatch: got 36 tokens (requested 512, diff -93.0%) (osl_mismatch_metrics.py:193)
+23:53:23.330 WARNING  OSL mismatch: got 29 tokens (requested 512, diff -94.3%) (osl_mismatch_metrics.py:193)
+Profiling: 491/640 |[32m███████▋  [0m|  77% [04:10<01:00]Profiling: 491/640 |[32m███████▋  [0m|  77% [04:10<01:00]23:53:27.570 WARNING  OSL mismatch: got 428 tokens (requested 512, diff -16.4%) (osl_mismatch_metrics.py:193)
+Profiling: 498/640 |[32m███████▊  [0m|  78% [04:18<01:23]Profiling: 498/640 |[32m███████▊  [0m|  78% [04:18<01:23]23:53:32.455 WARNING  OSL mismatch: got 380 tokens (requested 512, diff -25.8%) (osl_mismatch_metrics.py:193)
+23:53:34.137 WARNING  OSL mismatch: got 358 tokens (requested 512, diff -30.1%) (osl_mismatch_metrics.py:193)
+23:53:37.251 WARNING  OSL mismatch: got 213 tokens (requested 512, diff -58.4%) (osl_mismatch_metrics.py:193)
+Profiling: 505/640 |[32m███████▉  [0m|  79% [04:24<01:28]Profiling: 505/640 |[32m███████▉  [0m|  79% [04:24<01:28]23:53:39.619 WARNING  OSL mismatch: got 270 tokens (requested 512, diff -47.3%) (osl_mismatch_metrics.py:193)
+Profiling: 512/640 |[32m████████  [0m|  80% [04:26<01:11]Profiling: 512/640 |[32m████████  [0m|  80% [04:26<01:11]23:53:41.602 WARNING  OSL mismatch: got 290 tokens (requested 512, diff -43.4%) (osl_mismatch_metrics.py:193)
+23:53:42.551 WARNING  OSL mismatch: got 82 tokens (requested 512, diff -84.0%) (osl_mismatch_metrics.py:193)
+23:53:42.826 WARNING  OSL mismatch: got 325 tokens (requested 512, diff -36.5%) (osl_mismatch_metrics.py:193)
+Profiling: 523/640 |[32m████████▏ [0m|  82% [04:30<00:56]Profiling: 523/640 |[32m████████▏ [0m|  82% [04:30<00:56]23:53:44.190 WARNING  OSL mismatch: got 364 tokens (requested 512, diff -28.9%) (osl_mismatch_metrics.py:193)
+23:53:46.284 WARNING  OSL mismatch: got 96 tokens (requested 512, diff -81.2%) (osl_mismatch_metrics.py:193)
+23:53:46.647 WARNING  OSL mismatch: got 441 tokens (requested 512, diff -13.9%) (osl_mismatch_metrics.py:193)
+23:53:47.023 WARNING  OSL mismatch: got 344 tokens (requested 512, diff -32.8%) (osl_mismatch_metrics.py:193)
+23:53:47.188 WARNING  OSL mismatch: got 280 tokens (requested 512, diff -45.3%) (osl_mismatch_metrics.py:193)
+Profiling: 535/640 |[32m████████▎ [0m|  84% [04:34<00:44]Profiling: 535/640 |[32m████████▎ [0m|  84% [04:34<00:44]23:53:49.290 WARNING  OSL mismatch: got 198 tokens (requested 512, diff -61.3%) (osl_mismatch_metrics.py:193)
+23:53:50.963 WARNING  OSL mismatch: got 182 tokens (requested 512, diff -64.5%) (osl_mismatch_metrics.py:193)
+Profiling: 542/640 |[32m████████▍ [0m|  85% [04:38<00:45]Profiling: 542/640 |[32m████████▍ [0m|  85% [04:38<00:45]23:53:52.515 WARNING  OSL mismatch: got 89 tokens (requested 512, diff -82.6%) (osl_mismatch_metrics.py:193)
+23:53:52.767 WARNING  OSL mismatch: got 24 tokens (requested 512, diff -95.3%) (osl_mismatch_metrics.py:193)
+23:53:54.989 WARNING  OSL mismatch: got 134 tokens (requested 512, diff -73.8%) (osl_mismatch_metrics.py:193)
+Profiling: 551/640 |[32m████████▌ [0m|  86% [04:42<00:40]Profiling: 551/640 |[32m████████▌ [0m|  86% [04:42<00:40]23:53:57.147 WARNING  OSL mismatch: got 115 tokens (requested 512, diff -77.5%) (osl_mismatch_metrics.py:193)
+23:53:57.398 WARNING  OSL mismatch: got 168 tokens (requested 512, diff -67.2%) (osl_mismatch_metrics.py:193)
+23:53:58.327 WARNING  OSL mismatch: got 46 tokens (requested 512, diff -91.0%) (osl_mismatch_metrics.py:193)
+Profiling: 561/640 |[32m████████▊ [0m|  88% [04:46<00:34]Profiling: 561/640 |[32m████████▊ [0m|  88% [04:46<00:34]23:54:01.326 WARNING  OSL mismatch: got 99 tokens (requested 512, diff -80.7%) (osl_mismatch_metrics.py:193)
+23:54:01.506 WARNING  OSL mismatch: got 453 tokens (requested 512, diff -11.5%) (osl_mismatch_metrics.py:193)
+23:54:03.227 WARNING  OSL mismatch: got 144 tokens (requested 512, diff -71.9%) (osl_mismatch_metrics.py:193)
+Profiling: 569/640 |[32m████████▉ [0m|  89% [04:52<00:37]Profiling: 569/640 |[32m████████▉ [0m|  89% [04:52<00:37]23:54:06.043 WARNING  OSL mismatch: got 261 tokens (requested 512, diff -49.0%) (osl_mismatch_metrics.py:193)
+23:54:06.289 WARNING  OSL mismatch: got 64 tokens (requested 512, diff -87.5%) (osl_mismatch_metrics.py:193)
+23:54:08.245 WARNING  OSL mismatch: got 52 tokens (requested 512, diff -89.8%) (osl_mismatch_metrics.py:193)
+23:54:09.297 WARNING  OSL mismatch: got 281 tokens (requested 512, diff -45.1%) (osl_mismatch_metrics.py:193)
+Profiling: 578/640 |[32m█████████ [0m|  90% [04:56<00:30]Profiling: 578/640 |[32m█████████ [0m|  90% [04:56<00:30]Profiling: 585/640 |[32m█████████▏[0m|  91% [05:02<00:32]Profiling: 585/640 |[32m█████████▏[0m|  91% [05:02<00:32]23:54:18.715 WARNING  OSL mismatch: got 226 tokens (requested 512, diff -55.9%) (osl_mismatch_metrics.py:193)
+Profiling: 594/640 |[32m█████████▎[0m|  93% [05:06<00:24]Profiling: 594/640 |[32m█████████▎[0m|  93% [05:06<00:24]23:54:20.063 WARNING  OSL mismatch: got 36 tokens (requested 512, diff -93.0%) (osl_mismatch_metrics.py:193)
+23:54:20.771 WARNING  OSL mismatch: got 374 tokens (requested 512, diff -27.0%) (osl_mismatch_metrics.py:193)
+Profiling: 601/640 |[32m█████████▍[0m|  94% [05:08<00:18]Profiling: 601/640 |[32m█████████▍[0m|  94% [05:08<00:18]23:54:22.077 WARNING  OSL mismatch: got 385 tokens (requested 512, diff -24.8%) (osl_mismatch_metrics.py:193)
+23:54:22.316 WARNING  OSL mismatch: got 95 tokens (requested 512, diff -81.4%) (osl_mismatch_metrics.py:193)
+23:54:22.577 WARNING  OSL mismatch: got 73 tokens (requested 512, diff -85.7%) (osl_mismatch_metrics.py:193)
+Profiling: 611/640 |[32m█████████▌[0m|  95% [05:12<00:13]Profiling: 611/640 |[32m█████████▌[0m|  95% [05:12<00:13]23:54:26.191 WARNING  OSL mismatch: got 215 tokens (requested 512, diff -58.0%) (osl_mismatch_metrics.py:193)
+23:54:28.723 WARNING  OSL mismatch: got 240 tokens (requested 512, diff -53.1%) (osl_mismatch_metrics.py:193)
+Profiling: 618/640 |[32m█████████▋[0m|  97% [05:16<00:10]Profiling: 618/640 |[32m█████████▋[0m|  97% [05:16<00:10]23:54:30.901 WARNING  OSL mismatch: got 104 tokens (requested 512, diff -79.7%) (osl_mismatch_metrics.py:193)
+23:54:32.332 WARNING  OSL mismatch: got 273 tokens (requested 512, diff -46.7%) (osl_mismatch_metrics.py:193)
+23:54:32.715 WARNING  OSL mismatch: got 367 tokens (requested 512, diff -28.3%) (osl_mismatch_metrics.py:193)
+23:54:33.895 NOTICE   Phase profiling (profiling) sending complete | sent=640, completed=627, in_flight=13 | sessions: sent=640, completed=627 (runner.py:1103)
+23:54:33.896 INFO     Sent 640 requests. Waiting for all to complete... (records_manager.py:1422)
+Profiling: 627/640 |[32m█████████▊[0m|  98% [05:19<00:06]Profiling: 627/640 |[32m█████████▊[0m|  98% [05:19<00:06]23:54:34.594 WARNING  OSL mismatch: got 377 tokens (requested 512, diff -26.4%) (osl_mismatch_metrics.py:193)
+23:54:34.633 WARNING  OSL mismatch: got 202 tokens (requested 512, diff -60.5%) (osl_mismatch_metrics.py:193)
+23:54:35.367 WARNING  OSL mismatch: got 166 tokens (requested 512, diff -67.6%) (osl_mismatch_metrics.py:193)
+Profiling: 635/640 |[32m█████████▉[0m|  99% [05:24<00:02]Profiling: 635/640 |[32m█████████▉[0m|  99% [05:24<00:02]23:54:40.488 NOTICE   Phase profiling (profiling) complete | completed=640, cancelled=0, errors=0 | sessions: completed=640, cancelled=0 | elapsed=326.59s (runner.py:1226)
+23:54:40.488 NOTICE   All credits completed (phase_orchestrator.py:358)
+23:54:40.489 INFO     Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, phase_index=0, profiling_index=0, phase_name='profiling', phase_kind='profiling', start_ns=1795207753895681813, sent_end_ns=1795208073895456559, requests_end_ns=1795208080487902976, baseline_start_ns=1795207753895668639, baseline_end_ns=1795208080487931569, total_expected_requests=640, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=640, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=639, error_records=0) (records_manager.py:1449)
+23:54:40.489 NOTICE   All requests have completed, please wait for the results to be processed (currently 639 of 640 records processed)... (records_manager.py:1460)
+23:54:40.489 INFO     All credits complete, please wait for the results to be processed... (records_manager.py:1505)
+23:54:40.490 INFO     Received credits complete from 'timing_manager' (system_controller.py:829)
+23:54:40.492 INFO     System state: profiling -> processing (system_controller.py:700)
+Processing Records: 0/640 |[34m          [0m|   0% [00:00<?]23:54:40.506 INFO     Processed 640 valid requests and 0 errors (640 total). (records_manager.py:1207)
+23:54:40.506 INFO     Received all records, processing now... (records_manager.py:1213)
+Processing Records: 640/640 |[34m██████████[0m| 100% [00:00<00:00]23:54:40.508 INFO     GPU Telemetry: Profiling complete, capturing final metrics... (manager.py:426)
+23:54:40.511 INFO     Waiting 2.0s for server metrics flush period... (manager.py:696)
+23:54:42.488 INFO     Server Metrics: Profiling complete, capturing final metrics... (manager.py:701)
+23:54:44.129 INFO     Waiting for result domains: profile, telemetry (system_controller.py:1635)
+23:54:44.130 INFO     Processing records results... (records_manager.py:2368)
+23:54:44.379 INFO     Waiting for result domains: telemetry (system_controller.py:1635)
+23:54:44.381 INFO     System state: processing -> stopping (system_controller.py:700)
+23:54:44.381 INFO     All results received, initiating shutdown (system_controller.py:1630)
+23:54:44.381 INFO     _finalize_and_process_results completed (records_manager.py:1359)
+23:54:44.382 INFO     System state: stopping -> shutdown (system_controller.py:700)
+23:54:44.988 INFO     Exporting all records (exporter_manager.py:97)
+23:54:45.224 INFO     Exported 640 records to /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/outputs.json (outputs_json_exporter.py:89)
+23:54:45.226 INFO     Exporting console data (exporter_manager.py:527)
+
+
+                                           NVIDIA AIPerf | LLM Metrics: Effective                                           
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
+┃                                    Metric ┃       avg ┃   min ┃       max ┃       p99 ┃       p90 ┃       p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━┩
+│          Effective Concurrency (requests) │     15.21 │  0.00 │     25.00 │     23.00 │     20.00 │     15.00 │     3.77 │
+│  Effective Decode Throughput (tokens/sec) │    821.04 │  0.00 │  2,210.99 │  1,284.70 │  1,124.72 │    953.54 │   355.09 │
+│ Effective Prefill Throughput (tokens/sec) │  2,018.58 │  0.00 │ 19,294.47 │ 11,383.99 │ 10,337.18 │      0.00 │ 3,867.03 │
+│   Effective Decode Concurrency (requests) │     14.95 │  0.00 │     25.00 │     23.00 │     20.00 │     15.00 │     3.77 │
+│  Effective Prefill Concurrency (requests) │      0.26 │  0.00 │      2.00 │      1.00 │      1.00 │      0.00 │     0.45 │
+│   Effective Total Throughput (tokens/sec) │  2,839.62 │  0.00 │ 19,933.89 │ 12,057.24 │ 11,155.78 │    898.49 │ 3,839.85 │
+│      Effective Decode Throughput Per User │     56.12 │  0.00 │    169.58 │     84.50 │     76.06 │     64.67 │    23.54 │
+│                         (tokens/sec/user) │           │       │           │           │           │           │          │
+│     Effective Prefill Throughput Per User │  1,972.62 │  0.00 │ 13,893.90 │ 11,189.48 │ 10,258.65 │      0.00 │ 3,758.97 │
+│                         (tokens/sec/user) │           │       │           │           │           │           │          │
+│                 Tokens In Flight (tokens) │ 21,662.19 │  0.00 │ 47,868.24 │ 42,556.95 │ 36,273.13 │ 19,989.47 │ 9,466.30 │
+│         Effective Latency (CO-aware) (ms) │  7,760.87 │ 82.96 │ 13,098.92 │ 12,666.61 │ 11,234.78 │  8,394.72 │ 3,176.23 │
+└───────────────────────────────────────────┴───────────┴───────┴───────────┴───────────┴───────────┴───────────┴──────────┘
+                                          NVIDIA AIPerf | LLM Metrics: Active                                           
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┓
+┃                                 Metric ┃      avg ┃    min ┃       max ┃       p99 ┃       p90 ┃      p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━┩
+│  Active Decode Throughput (tokens/sec) │   823.12 │   0.00 │  2,210.99 │  1,285.62 │  1,124.92 │   954.13 │   353.13 │
+│ Active Prefill Throughput (tokens/sec) │ 7,922.44 │ 509.20 │ 19,294.47 │ 14,031.20 │ 11,054.26 │ 9,111.09 │ 3,452.20 │
+│      Active Decode Throughput Per User │    56.26 │   0.00 │    169.58 │     84.51 │     76.07 │    64.71 │    23.40 │
+│                      (tokens/sec/user) │          │        │           │           │           │          │          │
+│     Active Prefill Throughput Per User │ 7,742.07 │ 509.20 │ 13,893.90 │ 11,579.16 │ 10,996.50 │ 8,403.07 │ 3,284.63 │
+│                      (tokens/sec/user) │          │        │           │           │           │          │          │
+│   Active Total Throughput (tokens/sec) │ 2,844.02 │  65.56 │ 19,933.89 │ 12,057.24 │ 11,155.78 │   899.65 │ 3,841.20 │
+└────────────────────────────────────────┴──────────┴────────┴───────────┴───────────┴───────────┴──────────┴──────────┘
+                                         NVIDIA AIPerf | LLM Metrics: Usage                                         
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┓
+┃                                 Metric ┃        avg ┃   min ┃      max ┃      p99 ┃      p90 ┃    p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━┩
+│           Usage Prompt Tokens (tokens) │   1,061.69 │ 64.00 │ 8,069.00 │ 6,948.72 │ 3,359.50 │ 489.50 │ 1,456.73 │
+│       Usage Completion Tokens (tokens) │     420.32 │  3.00 │   512.00 │   512.00 │   512.00 │ 512.00 │   155.25 │
+│            Usage Total Tokens (tokens) │   1,482.00 │ 68.00 │ 8,581.00 │ 7,460.72 │ 3,838.50 │ 933.00 │ 1,492.40 │
+│     Total Usage Prompt Tokens (tokens) │ 679,479.00 │   N/A │      N/A │      N/A │      N/A │    N/A │      N/A │
+│ Total Usage Completion Tokens (tokens) │ 269,004.00 │   N/A │      N/A │      N/A │      N/A │    N/A │      N/A │
+│      Total Usage Total Tokens (tokens) │ 948,483.00 │   N/A │      N/A │      N/A │      N/A │    N/A │      N/A │
+└────────────────────────────────────────┴────────────┴───────┴──────────┴──────────┴──────────┴────────┴──────────┘
+                                                 NVIDIA AIPerf | LLM Metrics                                                  
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┓
+┃                                        Metric ┃      avg ┃   min ┃       max ┃       p99 ┃       p90 ┃      p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━┩
+│                      Time to First Token (ms) │   133.41 │ 36.76 │    733.86 │    647.40 │    301.99 │    86.02 │   121.01 │
+│                     Time to Second Token (ms) │    15.55 │  8.23 │     33.12 │     21.84 │     19.70 │    14.56 │     2.93 │
+│               Time to First Output Token (ms) │   133.41 │ 36.76 │    733.86 │    647.40 │    301.99 │    86.02 │   121.01 │
+│                          Request Latency (ms) │ 7,754.05 │ 66.48 │ 13,098.25 │ 12,665.84 │ 11,233.91 │ 8,393.81 │ 3,182.07 │
+│                          Decode Duration (ms) │ 7,620.64 │ 15.55 │ 12,798.88 │ 12,350.10 │ 11,053.02 │ 8,229.32 │ 3,149.99 │
+│                      Inter Token Latency (ms) │    18.01 │ 12.32 │     26.15 │     24.44 │     22.29 │    17.66 │     2.85 │
+│              Output Token Throughput Per User │    56.88 │ 38.23 │     81.15 │     76.72 │     68.15 │    56.61 │     8.77 │
+│                             (tokens/sec/user) │          │       │           │           │           │          │          │
+│ E2E Output Token Throughput (tokens/sec/user) │    55.64 │ 30.09 │     77.75 │     73.49 │     66.31 │    55.63 │     8.60 │
+│               Output Sequence Length (tokens) │   419.98 │  2.00 │    518.00 │    512.00 │    512.00 │   512.00 │   155.64 │
+│                Input Sequence Length (tokens) │ 1,030.08 │ 43.00 │  8,057.00 │  6,920.62 │  3,300.10 │   469.50 │ 1,438.98 │
+│          Output Token Throughput (tokens/sec) │   823.00 │   N/A │       N/A │       N/A │       N/A │      N/A │      N/A │
+│           Input Token Throughput (tokens/sec) │ 2,018.58 │   N/A │       N/A │       N/A │       N/A │      N/A │      N/A │
+│             Request Throughput (requests/sec) │     1.96 │   N/A │       N/A │       N/A │       N/A │      N/A │      N/A │
+│          Completed Requests (Success + Error) │   640.00 │   N/A │       N/A │       N/A │       N/A │      N/A │      N/A │
+│                                    (requests) │          │       │           │           │           │          │          │
+│                        Request Error Rate (%) │     0.00 │   N/A │       N/A │       N/A │       N/A │      N/A │      N/A │
+│                      Request Count (requests) │   640.00 │   N/A │       N/A │       N/A │       N/A │      N/A │      N/A │
+└───────────────────────────────────────────────┴──────────┴───────┴───────────┴───────────┴───────────┴──────────┴──────────┘
+
+Token usage is reported but no prompt-cache read tokens were seen (usage.prompt_tokens_details.cached_tokens absent). If your server uses 
+prefix/KV caching, enable cache reporting so AIPerf can populate the prompt-cache metrics: vLLM --enable-prompt-tokens-details, SGLang 
+--enable-cache-report (TRT-LLM reports it by default).
+
+
+╭──────────────────────────────────────────── GPU Telemetry Platform ─────────────────────────────────────────────╮
+│  Platform: nvidia                                                                                               │
+│  Metric semantics are platform-specific; cross-platform comparisons require workload and collector validation.  │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+            GPU Power Efficiency (NVIDIA)            
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃                                Metric ┃       avg ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│            Energy Delay Product (J*s) │  1,141.10 │
+│ Performance per Watt (requests/sec/W) │      0.01 │
+│     Output Tokens per Second per Watt │      2.85 │
+│                        (tokens/sec/W) │           │
+│                 Average GPU Power (W) │    288.38 │
+│                  Total GPU Energy (J) │ 94,183.52 │
+│                   Total GPU Power (W) │    283.16 │
+│     Energy per Total Token (mJ/token) │    101.49 │
+│    Energy per Output Token (mJ/token) │    350.40 │
+│   Energy per Request (joules/request) │    147.16 │
+│    Output Tokens per Joule (tokens/J) │      2.85 │
+└───────────────────────────────────────┴───────────┘
+
+Token usage is reported but no prompt-cache read tokens were seen (usage.prompt_tokens_details.cached_tokens absent). If your server uses 
+prefix/KV caching, enable cache reporting so AIPerf can populate the prompt-cache metrics: vLLM --enable-prompt-tokens-details, SGLang 
+--enable-cache-report (TRT-LLM reports it by default).
+
+
+                                 AIPerf | GPU Telemetry Summary                                 
+                                1/1 telemetry sources reachable                                 
+                                       • localhost:9400 ✔                                       
+                                                                                                
+                         localhost:9400 | GPU 0 | NVIDIA A100 80GB PCIe                         
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━┓
+┃                         Metric ┃    avg ┃    min ┃    max ┃    p99 ┃    p90 ┃    p50 ┃   std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━┩
+│     NVIDIA GPU Power Usage (W) │ 283.16 │ 248.66 │ 300.59 │ 300.59 │ 297.42 │ 287.54 │ 14.55 │
+│ NVIDIA Energy Consumption (MJ) │   0.09 │    N/A │    N/A │    N/A │    N/A │    N/A │   N/A │
+│     NVIDIA GPU Utilization (%) │ 100.00 │ 100.00 │ 100.00 │ 100.00 │ 100.00 │ 100.00 │  0.00 │
+│  NVIDIA Memory Utilization (%) │  60.06 │  22.00 │  87.00 │  87.00 │  85.60 │  72.00 │ 26.20 │
+│    NVIDIA GPU Memory Used (GB) │  80.99 │  80.99 │  80.99 │  80.99 │  80.99 │  80.99 │  0.00 │
+│    NVIDIA GPU Temperature (°C) │  62.97 │  50.00 │  66.00 │  66.00 │  66.00 │  65.00 │  4.81 │
+│ NVIDIA Decoder Utilization (%) │   0.00 │   0.00 │   0.00 │   0.00 │   0.00 │   0.00 │  0.00 │
+│ NVIDIA Encoder Utilization (%) │   0.00 │   0.00 │   0.00 │   0.00 │   0.00 │   0.00 │  0.00 │
+│      NVIDIA XID Errors (count) │   0.00 │    N/A │    N/A │    N/A │    N/A │    N/A │   N/A │
+│    NVIDIA Power Violation (us) │   0.00 │    N/A │    N/A │    N/A │    N/A │    N/A │   N/A │
+└────────────────────────────────┴────────┴────────┴────────┴────────┴────────┴────────┴───────┘
+
+╭──────────────────────────────────── Token Count Discrepancy Warning ─────────────────────────────────────╮
+│  178 of 640 requests (27.8%) show a difference exceeding 10% between:                                    │
+│    - API-reported usage tokens (from 'usage' field)                                                      │
+│    - Client-computed token counts (from tokenization)                                                    │
+│                                                                                                          │
+│  Possible Causes:                                                                                        │
+│    - Different tokenization methods (API vs client)                                                      │
+│    - API special tokens or preprocessing                                                                 │
+│                                                                                                          │
+│  Investigation Steps:                                                                                    │
+│    1. Review profile_export.jsonl for per-request usage_*_diff_pct values                                │
+│    2. Verify client tokenizer matches the model's tokenizer                                              │
+│    3. Use server token counts: --use-server-token-count (disables client tokenization and diff metrics)  │
+│    4. Adjust threshold: AIPERF_METRICS_USAGE_PCT_DIFF_THRESHOLD=10                                       │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────── Output Sequence Length Mismatch Warning ───────────────────────────────╮
+│  201 of 640 requests (31.4%) have output length differing from requested by more than the threshold.  │
+│  Threshold (tokens): min(requested x 5%, 50)                                                          │
+│  Average mismatch: -18.0%                                                                             │
+│                                                                                                       │
+│  Why: Server hit EOS token before reaching requested output length.                                   │
+│                                                                                                       │
+│  Fix Options:                                                                                         │
+│    - --extra-inputs ignore_eos:true - Generate until max_tokens (vLLM, TensorRT-LLM)                  │
+│    - --extra-inputs min_tokens:<N> - Set minimum output length (vLLM, TensorRT-LLM, SGLang)           │
+│    - --use-server-token-count - Use server-reported token counts if tokenizer mismatch suspected      │
+│                                                                                                       │
+│  Diagnostics:                                                                                         │
+│    - Review profile_export.jsonl -> osl_mismatch_diff_pct for per-request values                      │
+│    - Adjust: AIPERF_METRICS_OSL_MISMATCH_PCT_THRESHOLD=5                                              │
+│    - Adjust: AIPERF_METRICS_OSL_MISMATCH_MAX_TOKEN_THRESHOLD=50                                       │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+CLI Command: aiperf profile --url 'http://localhost:8000' --model 'Qwen/Qwen3-8B' --endpoint-type 'chat' --custom-dataset-type 'raw_payload' 
+--input-file 'data/requests.jsonl' --dataset-sampling-strategy 'sequential' --streaming --request-timeout-seconds 120 --random-seed 42 --ui 
+'simple' --export-outputs-json --request-count 640 --request-rate 2 --arrival-pattern 'constant' --output-artifact-dir 
+'results/prefill4096-120-r1/profile'
+Benchmark Duration: 326.09 sec
+CSV Export: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/profile_export_aiperf.csv
+JSON Export: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/profile_export_aiperf.json
+Server Metrics CSV Export: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/server_metrics_export.csv
+Server Metrics JSON Export: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/server_metrics_export.json
+Outputs JSON: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/outputs.json
+Log File: /home/saumnov/study/HSE_LLM/6/results/prefill4096-120-r1/profile/logs/aiperf.log
+

@@ -13,7 +13,7 @@ mkdir "$output"
 # Сохраняем окружение и входные параметры каждого замера.
 sha256sum "$data" > "$output/data.sha256"
 python -m pip freeze > "$output/packages.txt"
-cp serve.sh benchmark.sh load_test.sh "$output/"
+cp serve*.sh benchmark.sh load_test.sh "$output/"
 python - "$output" "$rpm" "${BENCHMARK_DURATION:-0}" <<'PY'
 import json
 import platform
@@ -47,10 +47,9 @@ curl -fsS -X POST "$url/reset_prefix_cache" >/dev/null
 
 limit=(--request-count "$(wc -l < "$data")")
 if [[ "${BENCHMARK_DURATION:-0}" != 0 ]]; then
-  limit=(--benchmark-duration "$BENCHMARK_DURATION")
+  limit=(--benchmark-duration "$BENCHMARK_DURATION" --benchmark-grace-period inf)
 fi
 
 aiperf profile "${common[@]}" "${limit[@]}" \
   --request-rate "$rps" --arrival-pattern constant \
-  --benchmark-grace-period inf \
   --output-artifact-dir "$output/profile" 2>&1 | tee "$output/benchmark.log"

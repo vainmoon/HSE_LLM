@@ -1,3 +1,10 @@
 !results/
 
 .venv*/
+.tmp/
+*.sha256
+
+results/environment/install.log
+results/*/profile/logs/
+results/*/warmup/logs/
+results/**/.aiperf_results_ready.json

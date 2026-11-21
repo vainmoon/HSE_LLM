@@ -1,3 +1,4 @@
+--only-binary=:all:
 --extra-index-url https://download.pytorch.org/whl/cu129
 
 vllm @ https://github.com/vllm-project/vllm/releases/download/v0.22.0/vllm-0.22.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl ; platform_machine == "x86_64"

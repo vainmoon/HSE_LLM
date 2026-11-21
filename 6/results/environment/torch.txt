@@ -1,0 +1,8 @@
+vllm: 0.22.0+cu129
+aiperf: 0.13.0
+transformers: 5.22.1
+torch: 2.11.0+cu129
+CUDA runtime: 12.9
+GPU: NVIDIA A100 80GB PCIe
+Compute capability: (8, 0)
+CUDA calculation: 2.0

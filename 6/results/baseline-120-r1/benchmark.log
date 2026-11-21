@@ -1,0 +1,4 @@
+╭─ Error Running AIPerf System ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --benchmark-grace-period requires --benchmark-duration to be set. Grace period only applies after a duration-bounded run; drop                │
+│ --benchmark-grace-period or pass --benchmark-duration as well.                                                                                │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯

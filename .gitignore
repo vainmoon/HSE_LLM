@@ -8,3 +8,9 @@ checkpoints/
 .ipynb_checkpoints/
 __pycache__/
 results/
+
+# Чекпоинты моделей для работы 7
+/7/artifacts_compression_hw/baseline/
+/7/artifacts_compression_hw/quantized/
+/7/artifacts_compression_hw/student_runs/
+/7/artifacts_compression_hw/student_sft/
